@@ -27,16 +27,18 @@
 
 .startquiz_btn button {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     padding: 4px;
     color: black;
     border-color: #6C3922;
-    background-color: #90BED4;
+    background-color: hsl(199, 44%, 60%);
+    border-radius: 5px;
 
 }
 
 .startquiz_btn button:hover {
-    background-color: hsl(199, 44%, 60%);
+    
+    background-color: #A6704E;
 }
 
 
