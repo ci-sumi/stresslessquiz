@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-   
+
+
 }
+
 .background {
     margin: 0;
     padding: 0;
@@ -14,30 +15,67 @@
     background-position: center;
     height: 100vh;
     background-image: url('/assets/images/hero.jpg')
-    
 }
-    
-.startquiz_btn{
+
+.startquiz_btn {
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 }
-.startquiz_btn button{
+
+.startquiz_btn button {
     font-weight: bold;
-    font-size:30px;
+    font-size: 30px;
     padding: 4px;
-    color:black;
-    border-color:#6C3922;
-    background-color:#90BED4;
-   
+    color: black;
+    border-color: #6C3922;
+    background-color: #90BED4;
+
 }
+
 .startquiz_btn button:hover {
     background-color: hsl(199, 44%, 60%);
 }
-.myfooter{
+
+
+
+h3 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
     text-align: center;
-    
+    color: black;
+    top:30px;
+    padding: 4px;
+    background-color:hsl(199, 44%, 60%);
+
 }
 
+h3:before,
+h3:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 6px;
+    content: '\a0';
+    background-color: #6C3922;
+    /* change color if needed*/
+    margin-left: 2%;
+}
+
+h3:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+.myfooter {
+    text-align: center;
+    background-color: #90BED4;
+    font-size: bold;
+
+
+}
