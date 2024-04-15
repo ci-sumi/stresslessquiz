@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     background-image: url('/assets/images/hero.jpg');
+    
    
 }
 .background {
@@ -13,19 +13,31 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-image: url('/assets/images/hero.jpg')
+    
 }
     
 .startquiz_btn{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    background-color:#6C3922;
     transform: translate(-50%, -50%);
     
 }
-#start{
+.startquiz_btn button{
     font-weight: bold;
-    font-size: 20px;
+    font-size:30px;
     padding: 4px;
-
+    color:black;
+    border-color:#6C3922;
+    background-color:#90BED4;
+   
 }
+.startquiz_btn button:hover {
+    background-color: hsl(199, 44%, 60%);
+}
+.myfooter{
+    text-align: center;
+    
+}
+
