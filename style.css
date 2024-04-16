@@ -89,9 +89,9 @@ h3:before {
     height: 50%;
     border: 2px double #6C3922 ;
     z-index: 2;
-    width: 350px;
+    width: 500px;
     background:#1A5D84;
-    border-radius: 5px;
+    border-radius: 30%;
     transform: translate(-50%,-50%) scale(0.9);
     pointer-events: none;
     transition: all 0.3s ease;
@@ -99,7 +99,7 @@ h3:before {
 
 }
 .rule-head{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -109,4 +109,17 @@ h3:before {
 .rulesnbuttons{
     text-align: center;
     margin-top: 20px;
+}
+.rulesbuttons button{
+    padding: 10px 20px;
+    margin:0 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A6704E;
+    cursor: pointer;
+
+}
+.rulesbuttons button:hover{
+    background-color: #1A5D84;
 }
