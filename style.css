@@ -89,13 +89,13 @@ h3:before {
     height: 50%;
     border: 2px double #6C3922 ;
     z-index: 2;
-    width: 500px;
+    width: 600px;
     background:#1A5D84;
-    border-radius: 30%;
+    border-radius: 15%;
     transform: translate(-50%,-50%) scale(0.9);
     pointer-events: none;
     transition: all 0.3s ease;
-    box-shadow: 5px 10px 18px #6C3922;
+    box-shadow: 10px 25px 20px #6C3922;
 
 }
 .rule-head{
@@ -104,14 +104,27 @@ h3:before {
     margin-bottom: 10px;
 }
 .rule{
-    margin-bottom: 10px;
+    margin-bottom:10px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position:relative;
+    color: white;
+    padding-right: 2px;
+    letter-spacing: -0.5px;
+   
 }
-.rulesnbuttons{
+.rulesbuttons{
     text-align: center;
     margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
 }
 .rulesbuttons button{
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin:0 5px;
     font-size: 16px;
     border: none;
