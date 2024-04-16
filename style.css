@@ -95,5 +95,18 @@ h3:before {
     transform: translate(-50%,-50%) scale(0.9);
     pointer-events: none;
     transition: all 0.3s ease;
+    box-shadow: 5px 10px 18px #6C3922;
 
+}
+.rule-head{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.rule{
+    margin-bottom: 10px;
+}
+.rulesnbuttons{
+    text-align: center;
+    margin-top: 20px;
 }
