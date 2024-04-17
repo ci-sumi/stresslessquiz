@@ -138,6 +138,24 @@ h3:before {
     background-color: #6C3922;
     color: white;
 }
-/* .rulesbuttons button:hover{
-    background-color: #1A5D84;
-} */
+
+.userName{
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.userName input[type="text"]{
+    padding: 5px;
+    font-size: 20px;
+}
+   
+
+.userName input[type="text"]:focus{
+    outline: none;
+    border-color: #6C3922;
+}
+    
