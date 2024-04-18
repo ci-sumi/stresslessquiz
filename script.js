@@ -10,6 +10,7 @@ document.getElementById("myExit").addEventListener("click",function(){
     var rulesBox = document.querySelector(".rules");
     rulesBox.style.display="none"
 });
+// Add form validation and placeholder handling for userName field
 document.getElementById("myContinue").addEventListener("click",function(){
     var userName=document.getElementById("userName")
     if(userName.value.trim()===""){
