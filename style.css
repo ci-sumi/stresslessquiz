@@ -167,7 +167,11 @@ label{
     display: none;
 }
 .quiz-question-container{
-    background-image: url('/assets/images/optimisam.jpg');
+    /* /* background-image: url('/assets/images/optimisam.jpg'); */
+    filter: brightness(0.7); 
+    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E); /* Gradient colors */
+    background-size: 200% 100%; /* Ensure enough space for animation */
+    animation: shining 5s infinite alternate; /* Animation properties */
     background-size: cover;
     z-index: 1;
     background-position: center;
@@ -184,7 +188,8 @@ label{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    
+    color: white;
+    font-size: 50px;
 }   
 .quiz-question-container h1{
     font-size: 1.1rem;
@@ -223,8 +228,8 @@ span label{
     cursor: pointer;
     transition: transform 0.3s;
     font-weight: 600;
-    color: brown;
-    border: 2px solid violet;
+    color: black;
+    border: 2px solid whitesmoke;
     border-radius: 10px;
 
 }
@@ -239,7 +244,7 @@ input[type="radio"]{
     display: none;
 }
 input[type=radio]:checked ~ .option{
-    background: violet;
+    background: whitesmoke;
 }
 .next-button-container{
     width:8rem;
@@ -257,4 +262,12 @@ input[type=radio]:checked ~ .option{
 }
 .next-button-container button:hover{
     background-color: white;
+}
+@keyframes shining {
+    0% {
+        background-position: 0 0; /* Start position */
+    }
+    100% {
+        background-position: 200% 0; /* End position */
+    }
 }
