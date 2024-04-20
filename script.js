@@ -19,6 +19,10 @@ document.getElementById("myContinue").addEventListener("click",function(){
         //continue with form submission
         var quizbox = document.querySelector(".quiz-question-container")
         quizbox.style.display="block"
+        var rulesBox = document.querySelector(".rules");
+        rulesBox.style.display="none"
+        var myButton = document.getElementById("myButton")
+        myButton.style.display="none"
     }
 
 })
