@@ -17,6 +17,8 @@ document.getElementById("myContinue").addEventListener("click",function(){
         userName.focus();
     }else{
         //continue with form submission
+        var quizbox = document.querySelector(".quiz-question-container")
+        quizbox.style.display="block"
     }
 
 })
