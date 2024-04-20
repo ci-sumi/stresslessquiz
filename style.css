@@ -78,6 +78,11 @@ h3:before {
     text-align: center;
     background-color: #90BED4;
     font-size: bold;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    
+  
 
 
 }
