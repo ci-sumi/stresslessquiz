@@ -13,75 +13,74 @@
         <!-- Header -->
         <div class="header">
             <h3><span>STRESSLESS QUIZ!</span></h3>
-     <!-- Start Button -->
-        <div class="startquiz_btn">
-            <button id="myButton">StartQuiz</button>
-        </div>
-        <!-- Rules Box -->
-        <div class="rules">
-            <div class="rule-head"><span>Rules</span>
+            <!-- Start Button -->
+            <div class="startquiz_btn">
+                <button id="myButton">StartQuiz</button>
+            </div>
+            <!-- Rules Box -->
+            <div class="rules">
+                <div class="rule-head"><span>Rules</span>
                 </div>
-            <hr>
-            <div class="rule">1. Each question has a time limit of <span>15 seconds.</span></div>
-            <div class="rule">2. Once you <span>select </span>an answer, it's final and cannot be changed.</div>
-            <div class="rule">3. Options cannot be selected once the time runs out.</div>
-            <div class="rule">4. Exiting the quiz during play <span>is not allowed.</span></div>
-            <div class="rule">5. Points are awarded based <span>on</span> correct answers.</div>
-            <hr>
-            <div class="userName">
-                <label for="userName">Enter Your Name:</label>
-                <input type="text" id="userName" name="userName" onfocus="clearPlaceholder()" onblur="setPlaceholder" placeholder="Field required">
-                
-                
+                <hr>
+                <div class="rule">1. Each question has a time limit of <span>15 seconds.</span></div>
+                <div class="rule">2. Once you <span>select </span>an answer, it's final and cannot be changed.</div>
+                <div class="rule">3. Options cannot be selected once the time runs out.</div>
+                <div class="rule">4. Exiting the quiz during play <span>is not allowed.</span></div>
+                <div class="rule">5. Points are awarded based <span>on</span> correct answers.</div>
+                <hr>
+                <div class="userName">
+                    <label for="userName">Enter Your Name:</label>
+                    <input type="text" id="userName" name="userName" onfocus="clearPlaceholder()"
+                        onblur="setPlaceholder" placeholder="Field required">
+
+
+                </div>
+
+                <div class="rulesbuttons">
+                    <button id="myExit">Exit</button>
+                    <button id="myContinue">Continue</button>
+                </div>
+
+
             </div>
 
-            <div class="rulesbuttons">
-                <button id="myExit">Exit</button>
-                <button id="myContinue">Continue</button>
-            </div>
-
-            
-        </div>
-             
         </div>
         <div class="quiz-question-container">
             <h1 id="display-question"></h1>
-              <h1>Score:<span id="player-score"></span>/10</h1>
-              <h1>Question:<span id="question-number"></span>/10</h1>
-        </div>
-        <div class="quiz-question-container">
-            <h1 id="display-question"></h1>
-        </div>
-        <div class="quiz-options-container">
-            <div class="modal-content-container">
-                <h1>Please Pick an Option</h1>
-                <div class="modal-button-container">
-                    <button onclick="closeOptionModal()">Continue</button>
+            <h1>Score:<span id="player-score"></span>/10</h1>
+            <h1>Question:<span id="question-number"></span>/10</h1>
+            <div class="quiz-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+            <div class="quiz-options-container">
+                <div class="modal-content-container">
+                    <h1>Please Pick an Option</h1>
+                    <div class="modal-button-container">
+                        <button onclick="closeOptionModal()">Continue</button>
+                    </div>
                 </div>
             </div>
+            <span><input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                <label for="option-one" class="option" id="option-one-label">
+
+                </label>
+            </span>
+            <span><input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                <label for="option-two" class="option" id="option-two-label"></label>
+            </span>
+            <span><input type="radio" id="option-three" name="option" class="radio" value="optionB" />
+                <label for="option-three" class="option" id="option-three-label"></label>
+            </span>
+            <span><input type="radio" id="option-four" name="option" class="radio" value="optionC" />
+                <label for="option-four" class="option" id="option-four-label"></label>
+            </span>
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">NextQuestion</button>
+            </div>
+
+
+
         </div>
-        <span><input type="radio" id="option-one" name="option" class="radio" value="optionA"/>
-            <label for="option-one" class="option" id="option-one-label">
-
-            </label>
-        </span>
-        <span><input type="radio" id="option-two" name="option" class="radio" value="optionB"/>
-            <label for="option-two" class="option" id="option-two-label"></label>
-        </span>
-        <span><input type="radio" id="option-three" name="option" class="radio" value="optionB"/>
-            <label for="option-three" class="option" id="option-three-label"></label>
-        </span>
-        <span><input type="radio" id="option-four" name="option" class="radio" value="optionC"/>
-            <label for="option-four" class="option" id="option-four-label"></label>
-        </span>
-        <div class="next-button-container">
-            <button onclick="handleNextQuestion()">NextQuestion</button>
-        </div>
-        
-        
-    </div>
-
-
 </body>
 <footer>
     <!-- Footer -->
@@ -91,4 +90,5 @@
 </footer>
 <!-- Connecting external JavaScript file  -->
 <script src="script.js"></script>
+
 </html>
