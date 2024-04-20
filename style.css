@@ -168,7 +168,7 @@ label{
 }
 .quiz-question-container{
     background-color: #f9f9f9;
-    width: 700px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,4 +196,23 @@ label{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+.quiz-options-container span{
+    width: 45%;
+    height: 3rem;
+    border: 2px solid blue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+    color: brown;
+
 }
