@@ -172,7 +172,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid lightblue;
+    border: 5px ridge #A6704E;
     border-radius: 25px;
     padding: 30px;
     margin: 10px auto;
@@ -183,3 +183,17 @@ label{
     transform: translate(-50%,-50%);
     
 }   
+.quiz-question-container h1{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 3px;
+
+}
+.quiz-options-container{
+    width:80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
