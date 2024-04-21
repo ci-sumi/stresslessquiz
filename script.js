@@ -46,3 +46,7 @@ document.getElementById("nextQuestion").addEventListener("click",function(){
     option.style.display="flex"
 
 })
+function closeOptionModal(){
+    var closeOptionModal = document.querySelector(".quiz-options-container")
+    closeOptionModal.style.display="none"
+}
