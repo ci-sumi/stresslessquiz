@@ -44,9 +44,13 @@ function setPlaceholder(){
 document.getElementById("nextQuestion").addEventListener("click",function(){
     var option = document.querySelector(".quiz-options-container")
     option.style.display="flex"
+    var nextQuestion = document.getElementById("nextQuestion");
+    nextQuestion.style.display = "none"
 
 })
 function closeOptionModal(){
     var closeOptionModal = document.querySelector(".quiz-options-container")
     closeOptionModal.style.display="none"
+    var nextQuestion = document.getElementById("nextQuestion");
+    nextQuestion.style.display = "block"
 }
