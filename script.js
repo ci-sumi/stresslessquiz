@@ -39,3 +39,10 @@ function setPlaceholder(){
         userName.value="Field required"
     }
 }
+
+
+document.getElementById("nextQuestion").addEventListener("click",function(){
+    var option = document.querySelector(".quiz-options-container")
+    option.style.display="flex"
+
+})
