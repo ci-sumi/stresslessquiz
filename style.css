@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
 
 
@@ -229,7 +229,7 @@ span label{
     transition: transform 0.3s;
     font-weight: 600;
     color: black;
-    border: 2px solid whitesmoke;
+    border: 2px solid tomato;
     border-radius: 10px;
 
 }
@@ -247,21 +247,29 @@ input[type=radio]:checked ~ .option{
     background: whitesmoke;
 }
 .next-button-container{
-    width:8rem;
-    height:2rem;
+    width: auto;
+    padding: 0px;
+    /* height:2rem;  */
     border-radius: 10px;
     background: none;
     color:blue;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     cursor: pointer;
     outline: none;
-    display: flex;
-    margin:auto;
+    display: flex; 
+    margin:0 20;
+    align-items: center;
+    justify-content: center;
     
     
 }
+.next-button-container button{
+    padding: 20px;
+    border-radius: 20px;
+}
 .next-button-container button:hover{
-    background-color: white;
+    background-color: blue;
+    
 }
 @keyframes shining {
     0% {
