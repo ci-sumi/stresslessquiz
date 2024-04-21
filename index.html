@@ -49,18 +49,12 @@
             <h1>Score:<span id="player-score"></span>/10</h1>
             <h1>Question:<span id="question-number">1</span>/10</h1>
             <hr>
-            <h1 id="display-question">What is the capital of France?What is the capital of France?What is the capital of France?</h1>
+            <h1 id="display-question">What is the capital of France?What is the capital of France?What is the capital of
+                France?</h1>
             <div class="quiz-question-container">
-                <h1 id="display-question"></h1>
+                <!-- <h1 id="display-question"></h1> -->
             </div>
-            <div class="quiz-options-container">
-                <div class="modal-content-container">
-                    <h1>Please Pick an Option</h1>
-                    <div class="modal-button-container">
-                        <button onclick="closeOptionModal()">Continue</button>
-                    </div>
-                </div>
-            </div>
+        
             <span><input type="radio" id="option-one" name="option" class="radio" value="optionA" />
                 <label for="option-one" class="option" id="option-one-label">
                     Paris
@@ -76,19 +70,31 @@
                 <label for="option-four" class="option" id="option-four-label">Rome</label>
             </span>
             <br>
-    <div class="next-button-container">
-                <button onclick="handleNextQuestion()">NextQuestion</button>
-     </div>
-
-
-
-   </div>
-<footer>
-<!-- Footer -->
-<div class="myfooter">
-<p>&copy; Layali</p>
-</div>
-</footer>
+             <div class="next-button-container">
+                <button id="nextQuestion">NextQuestion</button>
+            </div>
+        </div>
+    </div>
+    <div class="quiz-options-container">
+        <div class="modal-container" id="option-modal">
+        <div class="modal-content-container">
+            <h1>Please Pick an Option</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempore praesentium, voluptatum suscipit fuga neque doloribus quaerat incidunt harum accusantium, minima ullam aperiam quam voluptate ipsam. Deserunt assumenda quis qui?</p>
+            <div class="modal-button-container">
+                <button onclick="closeOptionModal()">Continue</button>
+            </div>
+           
+        
+        </div>  
+    </div>
+    </div>
+    
+        <footer>
+            <!-- Footer -->
+            <div class="myfooter">
+                <p>&copy; Layali</p>
+            </div>
+        </footer>
 </body>
 
 <!-- Connecting external JavaScript file  -->
