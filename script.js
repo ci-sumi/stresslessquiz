@@ -2,7 +2,7 @@
 document.getElementById("myButton").addEventListener("click",function(){
 
     var rulesBox = document.querySelector(".rules");
-    rulesBox.style.display="block"
+    rulesBox.style.display="block";
 
 });
 // function for Exitbutton click
@@ -131,9 +131,10 @@ function renderQuestion(){
     optionTwoLabel.textContent = currentQuestion.options[1];
     optionThreeLabel.textContent = currentQuestion.options[2];
     optionFourLabel.textContent = currentQuestion.options[3];
-    clearOptionSelection()
+    clearOptionSelection();
 
 }
+renderQuestion()
 //clear selection from all options
 function clearOptionSelection(){
 const allOption = document.querySelectorAll('input[name=option]')
@@ -142,25 +143,96 @@ allOption.forEach(option => {
     
 });
 }
+// const optionAll = document.querySelectorAll('.option');
+// optionAll.forEach(option => {
+//     option.style.backgroundColor = "";
+// });
 
 
-nextQuestion.addEventListener("click",()=>{
+
+document.getElementById("nextQuestion").addEventListener("click",()=>{
+    
+    
 // Add logic to handle unselected options in quiz
-    const selectOption = document.querySelector('input[name="option"]:checked')
+    const selectOption = document.querySelector('input[name="option"]:checked').value
     console.log(selectOption)
+
     if(!selectOption){
         var option = document.querySelector(".quiz-options-container")
         option.style.display="flex";
         return;
     }
 
+    const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
+    const optionsArray = quizQuestion[currentQuestionIndex].options;
+    const correctAnswer = currentQuestion.answer;
+    console.log(optionsArray)
+    let correspondingOptionValue;
+    switch(selectOption){
+        case "optionA":
+            correspondingOptionValue = optionsArray[0];
+            console.log(optionsArray[0])
+            console.log(correspondingOptionValue)
+            break;
+            case "optionB":
+                correspondingOptionValue = optionsArray[1];
+                break;
+            case "optionC":
+                correspondingOptionValue = optionsArray[2];
+                break;
+            case "optionD":
+                correspondingOptionValue = optionsArray[3];
+                break;
+            default:
+                correspondingOptionValue = ""; // Handle the case where none of the options match
+        }
+        if (correctAnswer=== correspondingOptionValue) {
+            console.log("Selected option is correct!");
+        } else {
+            console.log("Selected option is incorrect.");
+        }
+        currentQuestionIndex++;
+        if(currentQuestionIndex < quizQuestion.length){
+            renderQuestion();
+        }else{
+            console.log("End  the quiz")
+        }
+    
+    })
+   
+    
 
-    currentQuestionIndex++;
-    if(currentQuestionIndex<quizQuestion.length){
-        renderQuestion();
-    }else{
-        console.log("End  the quiz")
-    }
-})
-renderQuestion()
+
+
+
+    // console.log(currentQuestion)
+    //
+    // console.log(correctAnswer)
+    // console.log(selectOption.value)
+    // const optionsArray= quizQuestion[currentQuestionIndex].options;
+    // console.log(optionsArray)
+    // const optionIndex = optionsArray.indexOf(selectOption.value)
+    // console.log(optionIndex)
+    // const optionValue = optionsArray[selectOption.value]
+    // console.log(optionValue)
+
+    // const isOptionCorrect = optionsArray.includes(selectOption);
+    // console.log(isOptionCorrect)
+    // if(selectOption.value===correctAnswer){
+    //     console.log("correct")
+    // }else{
+    //     console.log("its not the way")
+    // }
+    
+    
+    // checkAnswer(quizQuestion[currentQuestionIndex]);
+
+  
+// function checker(){
+//     const useroption = document.querySelector('input[name="option"]:checked')
+//     console.log(useroption)
+    
+
+// }
+// checker();
 
