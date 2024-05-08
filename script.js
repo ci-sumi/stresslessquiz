@@ -58,15 +58,53 @@ function closeOptionModal(){
 //Define Array of quiz questions
 const quizQuestion = [
     {
-    question: "What is the capital of France?",
-    options: ["Paris", "London", "Berlin", "Rome"],
-    answer: "Paris"
+    question: "What is the primary hormone released during the body's fight or flight response to stress?",
+    options: ["Insulin","Dopamine","Cortisol","Serotonin"],
+    answer: "Dopamine"
     },
     {
-    question: "what is the largest planet in our solar system?",
-    options: ["Earth","Jupitar","Mars","Saturn"],
-    answer: "Jupitar"
+    question: "Which of the following is a healthy coping mechanism for stress?",
+    options: ["Smoking","Regular exercise","Excessive alcohol consumption","Avoiding social interactions"],
+    answer: "Regular exercise"
     },
+    {
+    question: "What is mindfulness meditation primarily focused on?",
+    options:["Ignoring emotions","Staying in the past","Being present in the moment","Multitasking"],
+    answer: "Being present in the moment"
+    
+    },
+    {
+    question:"Which of the following strategies can help in time management and reduce stress?",
+    options:["Procrastination","Multitasking","Prioritizing tasks","Avoiding planning"],
+    answer:"Prioritizing tasks"
+    },
+    {
+    question:"What is one way to promote a healthy work-life balance and reduce stress?",
+    options:["Working long hours without breaks","Setting clear boundaries between work and personal time","Checking emails and messages at all hours","Avoiding vacations and time off"],
+    answer:"Setting clear boundaries between work and personal time"
+    },
+    {
+      question:"What is the role of a support system in managing stress?",
+      options:["Isolating individuals from social interactions","Creating additional stress","Providing emotional and practical support","Ignoring personal challenges"],
+      answer:"Providing emotional and practical support"
+    },
+    {
+        question:"Chronic stress is linked to an increased risk of which health issues?",
+        options:["Improved immune function","Weight loss","Cardiovascular problems","Better sleep"],
+        answer:"Cardiovascular problems"
+      },
+    {
+        question:"Which lifestyle factor is associated with chronic stress?",
+        options:["Healthy Diet","Adequate Sleep","Regular Exercise","Poor Time Management"],
+        answer:"Poor Time Management"
+    },
+    {
+        question:"What is the recommended approach when facing a stressful situation that cannot be changed?",
+        options:["Ignoring the situation","Denying the stress","Acceptance and adapting","Blaming others"],
+        answer:"Acceptance and adapting"
+    },
+    
+    
 ];
 
 let currentQuestionIndex = 0;
