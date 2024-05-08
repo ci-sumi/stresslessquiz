@@ -106,6 +106,16 @@ const quizQuestion = [
     
     
 ];
+//function for random questions
+function shuffleArray(array){
+    for(let i = array.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [array[i],array[j]]=[array[j],array[i]]
+    }
+    return array;
+
+}
+const shuffleQuestionArray = shuffleArray(quizQuestion)
 
 let currentQuestionIndex = 0;
 const displayQuestion = document.getElementById("display-question");
@@ -115,15 +125,27 @@ const optionThreeLabel = document.getElementById("option-three-label");
 const optionFourLabel = document.getElementById("option-four-label");
 
 function renderQuestion(){
-    const currentQuestion = quizQuestion[currentQuestionIndex];
+    const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
     displayQuestion.textContent = currentQuestion.question;
     optionOneLabel.textContent = currentQuestion.options[0];
     optionTwoLabel.textContent = currentQuestion.options[1];
     optionThreeLabel.textContent = currentQuestion.options[2];
     optionFourLabel.textContent = currentQuestion.options[3];
-}
-nextQuestion.addEventListener("click",()=>{
+    clearOptionSelection()
 
+}
+//clear selection from all options
+function clearOptionSelection(){
+const allOption = document.querySelectorAll('input[name=option]')
+allOption.forEach(option => {
+    option.checked=false;
+    
+});
+}
+
+
+nextQuestion.addEventListener("click",()=>{
+// Add logic to handle unselected options in quiz
     const selectOption = document.querySelector('input[name="option"]:checked')
     console.log(selectOption)
     if(!selectOption){
