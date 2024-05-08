@@ -151,6 +151,7 @@ nextQuestion.addEventListener("click",()=>{
     if(!selectOption){
         var option = document.querySelector(".quiz-options-container")
         option.style.display="flex";
+        return;
     }
 
 
