@@ -123,6 +123,15 @@ function renderQuestion(){
     optionFourLabel.textContent = currentQuestion.options[3];
 }
 nextQuestion.addEventListener("click",()=>{
+
+    const selectOption = document.querySelector('input[name="option"]:checked')
+    console.log(selectOption)
+    if(!selectOption){
+        var option = document.querySelector(".quiz-options-container")
+        option.style.display="flex";
+    }
+
+
     currentQuestionIndex++;
     if(currentQuestionIndex<quizQuestion.length){
         renderQuestion();
