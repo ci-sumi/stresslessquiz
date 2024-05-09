@@ -1,3 +1,5 @@
+
+
 // start Button click
 document.getElementById("myButton").addEventListener("click",function(){
 
@@ -132,6 +134,12 @@ function renderQuestion(){
     optionThreeLabel.textContent = currentQuestion.options[2];
     optionFourLabel.textContent = currentQuestion.options[3];
     clearOptionSelection();
+    const radioButtons = document.querySelectorAll('input[name="option"]')
+    radioButtons.forEach(radioButton=>{
+        radioButton.disabled = false;
+    })
+
+    
 
 }
 renderQuestion()
@@ -154,7 +162,7 @@ document.getElementById("nextQuestion").addEventListener("click",()=>{
     
     
 // Add logic to handle unselected options in quiz
-    const selectOption = document.querySelector('input[name="option"]:checked').value
+    const selectOption = document.querySelector('input[name="option"]:checked')
     console.log(selectOption)
 
     if(!selectOption){
@@ -162,13 +170,15 @@ document.getElementById("nextQuestion").addEventListener("click",()=>{
         option.style.display="flex";
         return;
     }
-
+   
+   if(currentQuestionIndex<quizQuestion.length){
     const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
     const optionsArray = quizQuestion[currentQuestionIndex].options;
+    const selectOptionValue = selectOption.value;
     const correctAnswer = currentQuestion.answer;
     console.log(optionsArray)
     let correspondingOptionValue;
-    switch(selectOption){
+    switch(selectOptionValue){
         case "optionA":
             correspondingOptionValue = optionsArray[0];
             console.log(optionsArray[0])
@@ -197,42 +207,21 @@ document.getElementById("nextQuestion").addEventListener("click",()=>{
         }else{
             console.log("End  the quiz")
         }
-    
+   }
     })
    
-    
+   function radioButton(){ 
+  const radioButtons = document.querySelectorAll('input[name="option"]')
+  radioButtons.forEach(radioButton=>{
+    radioButton.addEventListener("click",event=>{
+        const clickedRadioButton = event.target
+        radioButtons.forEach(radio=>{
+            if(radio!==clickedRadioButton){
+                 radio.disabled = true;
+            }
+        });
+    });
 
-
-
-
-    // console.log(currentQuestion)
-    //
-    // console.log(correctAnswer)
-    // console.log(selectOption.value)
-    // const optionsArray= quizQuestion[currentQuestionIndex].options;
-    // console.log(optionsArray)
-    // const optionIndex = optionsArray.indexOf(selectOption.value)
-    // console.log(optionIndex)
-    // const optionValue = optionsArray[selectOption.value]
-    // console.log(optionValue)
-
-    // const isOptionCorrect = optionsArray.includes(selectOption);
-    // console.log(isOptionCorrect)
-    // if(selectOption.value===correctAnswer){
-    //     console.log("correct")
-    // }else{
-    //     console.log("its not the way")
-    // }
-    
-    
-    // checkAnswer(quizQuestion[currentQuestionIndex]);
-
-  
-// function checker(){
-//     const useroption = document.querySelector('input[name="option"]:checked')
-//     console.log(useroption)
-    
-
-// }
-// checker();
-
+  });
+}
+radioButton()
