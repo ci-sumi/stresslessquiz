@@ -242,7 +242,7 @@ function checkAnswer() {
     }
 
     // Disable all options after user selects one
-    // radioButtons.forEach(radio => {
-    //     radio.disabled = true;
-    // });
+    radioButtons.forEach(radio => {
+        radio.disabled = true;
+    });
 }
