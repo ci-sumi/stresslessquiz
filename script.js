@@ -120,11 +120,18 @@ function shuffleArray(array) {
 const shuffleQuestionArray = shuffleArray(quizQuestion)
 
 let currentQuestionIndex = 0;
+const totalQuestions = quizQuestion.length;
 const displayQuestion = document.getElementById("display-question");
 const optionOneLabel = document.getElementById("option-one-label");
 const optionTwoLabel = document.getElementById("option-two-label");
 const optionThreeLabel = document.getElementById("option-three-label");
 const optionFourLabel = document.getElementById("option-four-label");
+// "Add functionality to dynamically display question number during quiz progression"
+function displayQuestionNumber(){
+    const questionNumberDisplay = document.getElementById("question-number");
+    questionNumberDisplay.textContent = `${currentQuestionIndex+1} of ${totalQuestions}`
+}
+
 
 function renderQuestion() {
     const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
@@ -135,6 +142,7 @@ function renderQuestion() {
     optionFourLabel.textContent = currentQuestion.options[3];
     clearOptionSelection();
     enableRadioButtons()
+    displayQuestionNumber();
 
 
 
