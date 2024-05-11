@@ -220,6 +220,7 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
 //         radio.disabled = true;
 //     });
 // }
+let correctAnswerCount=0;
 const radioButtons = document.querySelectorAll('input[name="option"]');
 radioButtons.forEach(radioButton => {
     radioButton.addEventListener("click", checkAnswer);
@@ -240,6 +241,7 @@ function checkAnswer() {
 
     // Check if selected option matches the current answer
     if (options[selectedOptionIndex] === currentAnswer) {
+        correctAnswerCount++;
         console.log("Correct Answer");
         // Apply green color to the selected option
         labelElement.classList.add("correct")
@@ -248,9 +250,14 @@ function checkAnswer() {
         // Apply red color to the selected option
         labelElement.classList.add("wrong")
     }
-
+ 
     // Disable all options after user selects one
     radioButtons.forEach(radio => {
         radio.disabled = true;
     });
+    displayCorrectAnswerCount();
+}
+function displayCorrectAnswerCount(){
+    const CorrectAnswerCount = document.getElementById("player-score");
+    CorrectAnswerCount.textContent = `${correctAnswerCount}of ${totalQuestions}`
 }
