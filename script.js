@@ -26,7 +26,7 @@ document.getElementById("myContinue").addEventListener("click", function () {
         var myButton = document.getElementById("myButton")
         myButton.style.display = "none"
     }
-
+  
 })
 
 function clearPlaceholder() {
@@ -143,12 +143,16 @@ function renderQuestion() {
     clearOptionSelection();
     enableRadioButtons()
     displayQuestionNumber();
+  
+
+   
 
 
 
 
 }
 renderQuestion()
+
 //clear selection from all options
 function clearOptionSelection() {
     const allOption = document.querySelectorAll('input[name=option]')
@@ -173,7 +177,7 @@ function enableRadioButtons() {
 
 document.getElementById("nextQuestion").addEventListener("click", () => {
 
-
+    clearInterval(timeInterval);
     // Add logic to handle unselected options in quiz
     const selectOption = document.querySelector('input[name="option"]:checked')
     console.log(selectOption)
@@ -183,6 +187,7 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
         option.style.display = "flex";
         return;
     }
+    startTimer();
     currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestion.length) {
         renderQuestion();
@@ -238,6 +243,7 @@ function checkAnswer() {
     // Log selected option and current question for debugging
     console.log("Selected Option:", selectedOption);
     console.log("Current Question:", currentQuestion);
+    clearInterval(timeInterval);
 
     // Check if selected option matches the current answer
     if (options[selectedOptionIndex] === currentAnswer) {
@@ -261,3 +267,39 @@ function displayCorrectAnswerCount(){
     const CorrectAnswerCount = document.getElementById("player-score");
     CorrectAnswerCount.textContent = `${correctAnswerCount}of ${totalQuestions}`
 }
+//Timer
+let timeStarted = false;
+let timer = 15;
+let timeInterval;
+function updatetime(){
+    document.getElementById("timer").textContent = timer;
+    if(timer===0){
+        clearInterval(timeInterval);
+        promptUserOption();
+    }else{
+        timer--;
+    }  
+    
+    }
+        
+
+function startTimer(){
+
+    timer=15;
+    updatetime();
+    timeInterval = setInterval(updatetime,1000);
+
+}
+function promptUserOption(){
+     clearInterval(timeInterval);
+     console.log("please do a selection")
+}
+function renderFirstQuestion(){
+    renderQuestion();
+    if(!timeStarted){
+        startTimer();
+        timeStarted=true;
+    }
+}
+
+renderFirstQuestion();
