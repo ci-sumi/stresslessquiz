@@ -53,6 +53,8 @@ function setPlaceholder() {
 function closeOptionModal() {
     var closeOptionModal = document.querySelector(".quiz-options-container")
     closeOptionModal.style.display = "none"
+    clearInterval(timeInterval);
+    startTimer();
     // var nextQuestion = document.getElementById("nextQuestion");
     // nextQuestion.style.display = "block"
 }
@@ -143,6 +145,7 @@ function renderQuestion() {
     clearOptionSelection();
     enableRadioButtons()
     displayQuestionNumber();
+
   
 
    
@@ -292,7 +295,14 @@ function startTimer(){
 }
 function promptUserOption(){
      clearInterval(timeInterval);
-     console.log("please do a selection")
+     var prompt = document.querySelector(".modal-user-prompt") 
+     prompt.style.display="block";
+     var nextQuestion = document.querySelector(".next-button-container");
+     nextQuestion.style.display ="none";
+     var options = document.querySelectorAll(`input[type="radio"]`);
+     options.forEach(option=>{
+        option.disabled=true;
+     });
 }
 function renderFirstQuestion(){
     renderQuestion();
@@ -303,3 +313,15 @@ function renderFirstQuestion(){
 }
 
 renderFirstQuestion();
+function ok(){
+    var prompt = document.querySelector(".modal-user-prompt") 
+     prompt.style.display="none";
+     var nextQuestion = document.querySelector(".next-button-container");
+     nextQuestion.style.display ="block";
+     startTimer();
+     var options = document.querySelectorAll(`input[type="radio"]`)
+     options.forEach(option=>{
+        option.disabled=false
+     });
+     
+}
