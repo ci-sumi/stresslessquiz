@@ -1,10 +1,12 @@
 
 
 // start Button click
+let showUserprompt = false;
 document.getElementById("myButton").addEventListener("click", function () {
 
     var rulesBox = document.querySelector(".rules");
     rulesBox.style.display = "block";
+
 
 });
 // function for Exitbutton click
@@ -14,6 +16,7 @@ document.getElementById("myExit").addEventListener("click", function () {
 });
 // Add form validation and placeholder handling for userName field
 document.getElementById("myContinue").addEventListener("click", function () {
+    showUserprompt=true;
     var userName = document.getElementById("userName")
     if (userName.value.trim() === "") {
         userName.focus();
@@ -21,13 +24,14 @@ document.getElementById("myContinue").addEventListener("click", function () {
         //continue with form submission
         var quizbox = document.querySelector(".quiz-question-container")
         quizbox.style.display = "block"
+        startTimer();
         var rulesBox = document.querySelector(".rules");
         rulesBox.style.display = "none"
         var myButton = document.getElementById("myButton")
         myButton.style.display = "none"
     }
   
-})
+});
 
 function clearPlaceholder() {
     var userName = document.getElementById("userName");
@@ -248,6 +252,8 @@ function checkAnswer() {
     console.log("Current Question:", currentQuestion);
     clearInterval(timeInterval);
 
+    
+
     // Check if selected option matches the current answer
     if (options[selectedOptionIndex] === currentAnswer) {
         correctAnswerCount++;
@@ -272,7 +278,7 @@ function displayCorrectAnswerCount(){
 }
 //Timer
 let timeStarted = false;
-let timer = 15;
+let timer = 10;
 let timeInterval;
 function updatetime(){
     document.getElementById("timer").textContent = timer;
@@ -288,12 +294,13 @@ function updatetime(){
 
 function startTimer(){
 
-    timer=15;
+    timer=10;
     updatetime();
     timeInterval = setInterval(updatetime,1000);
 
 }
 function promptUserOption(){
+    if(showUserprompt){
      clearInterval(timeInterval);
      var prompt = document.querySelector(".modal-user-prompt") 
      prompt.style.display="block";
@@ -303,6 +310,7 @@ function promptUserOption(){
      options.forEach(option=>{
         option.disabled=true;
      });
+}
 }
 function renderFirstQuestion(){
     renderQuestion();
