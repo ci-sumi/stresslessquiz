@@ -192,7 +192,7 @@ label{
     font-size: 50px;
     display: none;
 }   
-.quiz-question-container h1{
+.quiz-question-container h1,h2{
     font-size: 1.1rem;
     text-align: center;
     padding: 3px;
@@ -382,3 +382,17 @@ input[type=radio]:checked ~ .option{
 .modal-button-container button:hover {
     background-color: #0056b3; /* darker blue on hover */
 }
+.correct{
+    color:green;
+}
+.wrong{
+    color: red;
+}
+#timer {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
