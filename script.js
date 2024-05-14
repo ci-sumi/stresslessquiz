@@ -57,8 +57,14 @@ function setPlaceholder() {
 function closeOptionModal() {
     var closeOptionModal = document.querySelector(".quiz-options-container")
     closeOptionModal.style.display = "none"
-    clearInterval(timeInterval);
-    startTimer();
+    var nextQuestion = document.querySelector(".next-button-container");
+    nextQuestion.style.display ="block";
+    console.log("stopping timer")
+    stopTimer();
+    console.log("timer is stopped")
+    
+    
+    // startTimer();
     // var nextQuestion = document.getElementById("nextQuestion");
     // nextQuestion.style.display = "block"
 }
@@ -150,13 +156,6 @@ function renderQuestion() {
     enableRadioButtons()
     displayQuestionNumber();
 
-  
-
-   
-
-
-
-
 }
 renderQuestion()
 
@@ -172,7 +171,7 @@ function enableRadioButtons() {
     const radioButtons = document.querySelectorAll('input[name="option"]')
     radioButtons.forEach(radioButton => {
         radioButton.disabled = false;
-    })
+    });
 
 }
 // const optionAll = document.querySelectorAll('.option');
@@ -184,25 +183,30 @@ function enableRadioButtons() {
 
 document.getElementById("nextQuestion").addEventListener("click", () => {
 
-    clearInterval(timeInterval);
     // Add logic to handle unselected options in quiz
     const selectOption = document.querySelector('input[name="option"]:checked')
-    console.log(selectOption)
+    
 
     if (!selectOption) {
         var option = document.querySelector(".quiz-options-container")
         option.style.display = "flex";
+        var nextQuestion = document.querySelector(".next-button-container");
+        nextQuestion.style.display ="none";
+        stopTimer(); 
         return;
     }
-    startTimer();
+    stopTimer();
     currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestion.length) {
         renderQuestion();
+        startTimer();
     } else {
         console.log("End  the quiz")
     }
+
 }
-)
+
+);
 
 // const radioButtons = document.querySelectorAll('input[name="option"]');
 // radioButtons.forEach(radioButton => {
@@ -236,32 +240,37 @@ let correctAnswerCount=0;
 const radioButtons = document.querySelectorAll('input[name="option"]');
 radioButtons.forEach(radioButton => {
     radioButton.addEventListener("click", checkAnswer);
+    
 });
 function checkAnswer() {
+       
     const selectOption = document.querySelector('input[name="option"]:checked');
     const selectedOption = selectOption.value;
     const labelElement = selectOption.parentElement;
-    console.log(labelElement)
     const selectedOptionIndex = selectOption.value.charCodeAt(6) - 65; // Mapping 'A', 'B', 'C', 'D' to 0, 1, 2, 3
     const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
     const currentAnswer = currentQuestion.answer;
     const options = currentQuestion.options;
+    stopTimer();
+    // timer = document.getElementById("timer")
+    // timer.style.display="none"
+  
 
     // Log selected option and current question for debugging
-    console.log("Selected Option:", selectedOption);
-    console.log("Current Question:", currentQuestion);
-    clearInterval(timeInterval);
-
+    // console.log("Selected Option:", selectedOption);
+    // console.log("Current Question:", currentQuestion);
+    
     
 
     // Check if selected option matches the current answer
     if (options[selectedOptionIndex] === currentAnswer) {
         correctAnswerCount++;
-        console.log("Correct Answer");
+       
+        // console.log("Correct Answer");
         // Apply green color to the selected option
         labelElement.classList.add("correct")
     } else {
-        console.log("Wrong Answer");
+        // console.log("Wrong Answer");
         // Apply red color to the selected option
         labelElement.classList.add("wrong")
     }
@@ -271,6 +280,8 @@ function checkAnswer() {
         radio.disabled = true;
     });
     displayCorrectAnswerCount();
+   
+    
 }
 function displayCorrectAnswerCount(){
     const CorrectAnswerCount = document.getElementById("player-score");
@@ -278,13 +289,14 @@ function displayCorrectAnswerCount(){
 }
 //Timer
 let timeStarted = false;
-let timer = 10;
+let timer = 15;
 let timeInterval;
 function updatetime(){
     document.getElementById("timer").textContent = timer;
     if(timer===0){
-        clearInterval(timeInterval);
+        stopTimer();
         promptUserOption();
+    
     }else{
         timer--;
     }  
@@ -294,14 +306,23 @@ function updatetime(){
 
 function startTimer(){
 
-    timer=10;
+    timer=15;
     updatetime();
     timeInterval = setInterval(updatetime,1000);
 
 }
+function stopTimer(){
+    // console.log("timer is stopping")
+    clearInterval(timeInterval);
+    // console.log("timer is stopped");
+      timeStarted=false;
+}
 function promptUserOption(){
     if(showUserprompt){
-     clearInterval(timeInterval);
+        // console.log(showUserprompt)
+    
+    stopTimer();    
+    // console.log("timer is stopped")
      var prompt = document.querySelector(".modal-user-prompt") 
      prompt.style.display="block";
      var nextQuestion = document.querySelector(".next-button-container");
@@ -310,8 +331,11 @@ function promptUserOption(){
      options.forEach(option=>{
         option.disabled=true;
      });
+     
 }
 }
+
+
 function renderFirstQuestion(){
     renderQuestion();
     if(!timeStarted){
@@ -329,7 +353,21 @@ function ok(){
      startTimer();
      var options = document.querySelectorAll(`input[type="radio"]`)
      options.forEach(option=>{
-        option.disabled=false
+      option.disabled=false;
      });
+    //  document.getElementById("nextQuestion").click();
      
 }
+//To restart quiz
+document.getElementById("restart").addEventListener("click",restart)
+function restart(){
+    
+    var quizbox = document.querySelector(".modal-user-results")
+    quizbox.style.display = "none";
+    // var rulesBox = document.querySelector(".rules");
+    // rulesBox.style.display = "block";
+    // var quizbox = document.querySelector(".quiz-question-container")
+    // quizbox.style.display = "none"
+
+}
+
