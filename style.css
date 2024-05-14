@@ -450,12 +450,14 @@ input[type=radio]:checked ~ .option{
   .modal-user-results{
     display: block;
     position: fixed;
-    top:55%;
+    top:40%;
     left: 50%;
     transform:translate(-50%,-50%);
-    max-width: 600px;
-    padding:45px 45px;
-    border-radius: 5px;
+    max-width: 300px;
+    /* width: 80%; */
+    padding:50px;
+    border-radius: 25px;
+    border: 2px solid red;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     text-align: center;
