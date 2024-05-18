@@ -201,7 +201,12 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
         renderQuestion();
         startTimer();
     } else {
-        console.log("End  the quiz")
+        var nextQuestion = document.querySelector(".next-button-container");
+        nextQuestion.style.display ="none";
+        stopTimer();
+        displayResults();
+        
+
     }
 
 }
@@ -359,15 +364,33 @@ function ok(){
      
 }
 //To restart quiz
-document.getElementById("restart").addEventListener("click",restart)
-function restart(){
+
+// function restart(){
     
-    var quizbox = document.querySelector(".modal-user-results")
-    quizbox.style.display = "none";
-    // var rulesBox = document.querySelector(".rules");
-    // rulesBox.style.display = "block";
-    // var quizbox = document.querySelector(".quiz-question-container")
-    // quizbox.style.display = "none"
+//     var quizbox = document.querySelector(".modal-user-results")
+//     quizbox.style.display = "block";
+//     // var rulesBox = document.querySelector(".rules");
+//     // rulesBox.style.display = "block";
+//     // var quizbox = document.querySelector(".quiz-question-container")
+//     // quizbox.style.display = "none"
+
+// }
+
+function displayResults(){
+    const results = document.querySelector(".modal-user-results");
+    results.displayed=true;
+    const qwrightanswers = document.getElementById("qright");
+    qwrightanswers.textContent= `Correct Answers: ${correctAnswerCount}`;
+    const attempts = document.getElementById("attempt")
+    attempts.textContent = `Attempts:${currentQuestionIndex}`
+    const qwronganswers = document.getElementById("qwrong");
+    qwronganswers.textContent = `Wrong Answers: ${currentQuestionIndex-correctAnswerCount}`;
+    const grade = document.getElementById("grade");
+    const percentage = (correctAnswerCount/totalQuestions)*100;
+    grade.textContent =`Grdae : ${percentage.toFixed(2)}%`;
+    const congrat = document.getElementById("congrat")
+    congrat.textContent =percentage>=50 ? "congratulations" : "Keep Practicing"
+
+
 
 }
-
