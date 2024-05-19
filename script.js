@@ -14,23 +14,23 @@ document.getElementById("myExit").addEventListener("click", function () {
     var rulesBox = document.querySelector(".rules");
     rulesBox.style.display = "none"
 });
-// Add form validation and placeholder handling for userName field
 document.getElementById("myContinue").addEventListener("click", function () {
-    showUserprompt=true;
-    var userName = document.getElementById("userName")
+    showUserprompt = true;
+    var userName = document.getElementById("userName");
     if (userName.value.trim() === "") {
         userName.focus();
     } else {
         //continue with form submission
-        var quizbox = document.querySelector(".quiz-question-container")
-        quizbox.style.display = "block"
-        startTimer();
         var rulesBox = document.querySelector(".rules");
-        rulesBox.style.display = "none"
-        var myButton = document.getElementById("myButton")
-        myButton.style.display = "none"
+        rulesBox.style.display = "none";
+        var quizbox = document.querySelector(".quiz-question-container");
+        quizbox.style.display = "block";
+        var myButton = document.getElementById("myButton");
+        myButton.style.display = "none";
+        renderQuestion()
+        startTimer();
     }
-  
+
 });
 
 function clearPlaceholder() {
@@ -60,7 +60,7 @@ function closeOptionModal() {
     var nextQuestion = document.querySelector(".next-button-container");
     nextQuestion.style.display ="block";
     console.log("stopping timer")
-    stopTimer();
+    startTimer();
     console.log("timer is stopped")
     
     
@@ -153,11 +153,12 @@ function renderQuestion() {
     optionThreeLabel.textContent = currentQuestion.options[2];
     optionFourLabel.textContent = currentQuestion.options[3];
     clearOptionSelection();
-    enableRadioButtons()
+    enableRadioButtons();
     displayQuestionNumber();
+    
 
 }
-renderQuestion()
+
 
 //clear selection from all options
 function clearOptionSelection() {
@@ -256,6 +257,7 @@ function checkAnswer() {
     const currentQuestion = shuffleQuestionArray[currentQuestionIndex];
     const currentAnswer = currentQuestion.answer;
     const options = currentQuestion.options;
+    ansSelected = true;
     stopTimer();
     // timer = document.getElementById("timer")
     // timer.style.display="none"
@@ -296,23 +298,33 @@ function displayCorrectAnswerCount(){
 let timeStarted = false;
 let timer = 15;
 let timeInterval;
+let ansSelected = false;
+
 function updatetime(){
-    document.getElementById("timer").textContent = timer;
-    if(timer===0){
-        stopTimer();
-        promptUserOption();
+    const timerElement = document.getElementById("timer");
+    timerElement.textContent = timer;
+    if(!ansSelected){
+        if(timer===0){
+            stopTimer();
     
-    }else{
-        timer--;
+            promptUserOption();
+        
+        }else{
+            timer--;
+        }  
     }  
-    
-    }
+}
         
 
 function startTimer(){
 
     timer=15;
+    ansSelected = false;
     updatetime();
+    if(timeInterval){
+        clearInterval(timeInterval)
+
+    }
     timeInterval = setInterval(updatetime,1000);
 
 }
@@ -343,19 +355,20 @@ function promptUserOption(){
 
 function renderFirstQuestion(){
     renderQuestion();
-    if(!timeStarted){
-        startTimer();
-        timeStarted=true;
-    }
+    // if(!timeStarted){
+    //     startTimer();
+       timeStarted=true;
+    // }
 }
 
 renderFirstQuestion();
 function ok(){
+    startTimer();
     var prompt = document.querySelector(".modal-user-prompt") 
      prompt.style.display="none";
      var nextQuestion = document.querySelector(".next-button-container");
      nextQuestion.style.display ="block";
-     startTimer();
+     
      var options = document.querySelectorAll(`input[type="radio"]`)
      options.forEach(option=>{
       option.disabled=false;
@@ -380,8 +393,7 @@ function displayResults(){
     var userName = document.getElementById("userName").value;
     var playerName = document.getElementById("playerName");
     playerName.textContent = userName;
-    const results = document.querySelector(".modal-user-results");
-    results.displayed=true;
+    
     const qwrightanswers = document.getElementById("qright");
     qwrightanswers.textContent= `Correct Answers: ${correctAnswerCount}`;
     const attempts = document.getElementById("attempt")
@@ -393,6 +405,8 @@ function displayResults(){
     grade.textContent =`Grdae : ${percentage.toFixed(2)}%`;
     const congrat = document.getElementById("congrat")
     congrat.textContent =percentage>=50 ? "congratulations" : "Keep Practicing"
+    const results = document.querySelector(".modal-user-results");
+    results.style.display = "block"
 
 
 
