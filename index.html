@@ -32,8 +32,6 @@
                     <label for="userName">Enter Your Name:</label>
                     <input type="text" id="userName" name="userName" onfocus="clearPlaceholder()"
                         onblur="setPlaceholder" placeholder="Field required">
-
-
                 </div>
 
                 <div class="rulesbuttons">
@@ -51,14 +49,14 @@
             <h2>Time left:<span id="timer"></span></h2>
             <hr>
             <h1 id="display-question">
-                </h1>
-            <div class="quiz-question-container">
+            </h1>
+            <!-- <div class="quiz-question-container"> -->
                 <!-- <h1 id="display-question"></h1> -->
-            </div>
-        
+            <!-- </div> -->
+
             <span><input type="radio" id="option-one" name="option" class="radio" value="optionA" />
                 <label for="option-one" class="option" id="option-one-label">
-                    
+
                 </label>
             </span>
             <span><input type="radio" id="option-two" name="option" class="radio" value="optionB" />
@@ -71,54 +69,64 @@
                 <label for="option-four" class="option" id="option-four-label"></label>
             </span>
             <br>
-             <div class="next-button-container">
+            <div class="next-button-container">
                 <button id="nextQuestion">NextQuestion</button>
             </div>
         </div>
     </div>
-    <footer>
-        <!-- Footer -->
-   <div class="myfooter">
-    <p>&copy; Layali</p>
-        </div>
-   </footer>
-
-    <div class="quiz-options-container">
-        <div class="modal-container" id="option-modal">
-        <div class="modal-content-container">
-            <h1>warning</h1>
-            <p>Please do choose an option</p>
-            <div class="modal-button-container">
-                <button onclick="closeOptionModal()">Continue</button>
-            </div>
-            
-           
-        
-        </div>  
-    </div>
-    </div>
+    
     <div class="modal-user-prompt">
         <h1>Time Out</h1>
         <p>Please do slect an option 😒</p>
         <div class="modal-button-container">
             <button onclick="ok()">Ok</button>
         </div>
-    <div class="modal-user-results">
-           <h1 id="playerName"></h1>
-            <h1>Congradulations!!
-                Quiz completed</h1>
-            <hr>
-            <hr>
-            <p id="attempt"></p>
-            <p id="qwrong"></p>
-            <p id="qright"></p>
-            <p id="grade"></p>
-            <p id="congrat"></p>
-            <div class="modal-button-result-container">
-                <button id ="restart" onclick="restart()">Restart</button>
+</div>
+<div class="modal-user-results">
+        <h1 id="playerName"></h1>
+        <h1>Congradulations!!
+            Quiz completed</h1>
+        <hr>
+        <hr>
+        <p id="attempt"></p>
+        <p id="qwrong"></p>
+        <p id="qright"></p>
+        <p id="grade"></p>
+        <p id="congrat"></p>
+        <div class="modal-button-result-container">
+            <button id="restart" onclick="restart()">Restart</button>
+            <br>
+            <br>
+            <button id="exit" onclick="exit()">Exit</button>
+        </div>
+
+
+    </div>
+</div>
+<footer>
+    <!-- Footer -->
+    <div class="myfooter">
+        <p>&copy; Layali</p>
+    </div>
+</footer>
+   <div class="quiz-options-container">
+    <div class="modal-container" id="option-modal">
+        <div class="modal-content-container">
+            <h1>warning</h1>
+            <p>Please do choose an option</p>
+            <div class="modal-button-container">
+                <button onclick="closeOptionModal()">Continue</button>
+            </div>
+
+
+
+        </div>
+
     </div>
 
-       
+    
+
+    
 
 </body>
 
