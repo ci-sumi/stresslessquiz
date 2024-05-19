@@ -377,6 +377,9 @@ function ok(){
 // }
 
 function displayResults(){
+    var userName = document.getElementById("userName").value;
+    var playerName = document.getElementById("playerName");
+    playerName.textContent = userName;
     const results = document.querySelector(".modal-user-results");
     results.displayed=true;
     const qwrightanswers = document.getElementById("qright");
