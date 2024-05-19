@@ -109,7 +109,7 @@ h3:before {
 .rule{
     margin-bottom:10px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Arial, sans-serif;
     font-weight: bold;
     position:relative;
@@ -120,16 +120,16 @@ h3:before {
 }
 .rulesbuttons{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left:50%;
     transform: translateX(-50%);
 }
 .rulesbuttons button{
-    padding: 10px 10px;
+    padding: 5px 5px;
     margin:0 5px;
-    font-size: 16px;
+    font-size: 10px;
     border: none;
     border-radius: 5px;
     background-color: #A6704E;
@@ -309,22 +309,7 @@ input[type=radio]:checked ~ .option{
 }
 .modal-content-container button:hover{
     background-color: white
-}
-.modal-container{
-    
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color:blue; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    -webkit-animation: fadeIn 1.2s ease-in-out;
-    animation: fadeIn 1.2s ease-in-out;
-} */
+/* } */
 
 
 
@@ -423,7 +408,7 @@ input[type=radio]:checked ~ .option{
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
   }
   .modal-user-prompt h1{
     margin-top:0;
@@ -448,20 +433,20 @@ input[type=radio]:checked ~ .option{
     background-color: black;
   }
   .modal-user-results{
-    display: block;
+    display: none;
     position: fixed;
-    top:35%;
+    top:52%;    
     left: 50%;
     transform:translate(-50%,-50%);
     max-width: 300px;
     /* width: 80%; */
-    padding:50px;
+    padding:10px;
     border-radius: 25px;
     border: 2px solid red;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
   }
   .modal-user-results h1{
     margin-top:0;
