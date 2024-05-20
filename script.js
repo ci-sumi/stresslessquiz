@@ -201,6 +201,9 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
     if (currentQuestionIndex < quizQuestion.length) {
         renderQuestion();
         startTimer();
+        if(currentQuestionIndex===quizQuestion.length-1){
+            document.getElementById("nextQuestion").textContent="Result"
+        }
     } else {
         var nextQuestion = document.querySelector(".next-button-container");
         nextQuestion.style.display ="none";
