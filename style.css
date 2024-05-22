@@ -192,6 +192,7 @@ label{
     background-position: center;
     width: 600px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 5px ridge #A6704E;
@@ -245,22 +246,33 @@ label{
     overflow: hidden; */
 /* }  */
 .quiz-options-container {
-    display: none;
-    position: fixed;
-    top:55%;
-    left: 50%;
+    /* display: none; */
+    /* position: fixed;
+    bottom:50%;
+    left: 20%;
     transform:translate(-50%,-50%);
-    max-width: 300px;
-    padding:32px 32px;
+    width: 10%;
+    max-width: 100px;
+    min-width: 50px;
+    padding:10px;
     border-radius: 5px;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     text-align: center;
     z-index: 1;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    
    
 }
+/* .modal-content-container h1,p,button{
+    align-items: center;
+    justify-content: center;
+    
+
+} */
 span label{
     width: 100%;
     height: 100%;
@@ -352,9 +364,12 @@ input[type=radio]:checked ~ .option{
     left: 50%;
     transform: translate(-50%);
     max-width: 600px;
-    padding: 120px;
+    padding: 20px;
     border-radius: 5px;
     height: 25%;
+    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    border-radius: 5px;
     /* display: flex; */
     justify-content: space-around;
     align-items: center;
@@ -362,7 +377,7 @@ input[type=radio]:checked ~ .option{
     z-index: 2;
 }
 
-.modal-content-container {
+/* .modal-content-container {
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
     padding: 50px;
     border-radius: 5px;
@@ -373,7 +388,7 @@ input[type=radio]:checked ~ .option{
     left: 50%;
     transform: translate(-50%, -50%);
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
+} */
 
 .modal-content-container h1 {
     font-size: 4vw;;
