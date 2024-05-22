@@ -46,6 +46,16 @@ function setPlaceholder() {
     }
 }
 
+document.getElementById("userName").addEventListener("input",function(event){
+    const namePattern = /^[A-Za-z]*$/
+    const userName = event.target;
+    if(!namePattern.test(userName.value)){
+        userName.value = userName.value.replace(/[^a-zA-Z]/g,'');
+    }
+    if(userName.value.length>0){
+        userName.value = userName.value.charAt(0).toUpperCase() + userName.value.slice(1).toLowerCase();
+    }
+});
 
 // document.getElementById("nextQuestion").addEventListener("click",function(){
 //     var option = document.querySelector(".quiz-options-container")
