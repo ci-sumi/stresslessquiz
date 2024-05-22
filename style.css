@@ -233,7 +233,7 @@ label{
     /* border: 2px solid blue;
     border-radius: 20px;
     overflow: hidden; */
-} */
+/* }  */
 .quiz-options-container {
     display: none;
     position: fixed;
@@ -247,6 +247,8 @@ label{
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     text-align: center;
     z-index: 1;
+    display: flex;
+    justify-content: space-around;
    
 }
 span label{
@@ -355,15 +357,16 @@ input[type=radio]:checked ~ .option{
     padding: 50px;
     border-radius: 5px;
     margin: 20% auto;
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     top:50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .modal-content-container h1 {
-    font-size: 24px;
+    font-size: 4vw;;
     color: black;
     text-align: center;
     margin-top: 0;
@@ -560,7 +563,9 @@ input[type=radio]:checked ~ .option{
         transform: scale(var(--scale-factor));
         color: blue;
     }
-   
+   .quiz-option-container{
+    width:90%;
+   }
     
 
   }
