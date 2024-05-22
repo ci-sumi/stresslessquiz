@@ -245,7 +245,7 @@ label{
     border-radius: 20px;
     overflow: hidden; */
 /* }  */
-.quiz-options-container {
+/* .quiz-options-container { */
     /* display: none; */
     /* position: fixed;
     bottom:50%;
@@ -266,7 +266,7 @@ label{
     justify-content: center; */
     
    
-}
+/* } */
 /* .modal-content-container h1,p,button{
     align-items: center;
     justify-content: center;
