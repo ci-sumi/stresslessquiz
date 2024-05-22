@@ -14,7 +14,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-image: url('/assets/images/hero.jpg');
+    background-image: url('./assets/images/hero.jpg');
     display: flex;
     flex-direction: column;
 }
@@ -560,10 +560,7 @@ input[type=radio]:checked ~ .option{
         transform: scale(var(--scale-factor));
         color: blue;
     }
-    .quiz-options-container{
-        width:auto ;
-    }
-    
+   
     
 
   }
