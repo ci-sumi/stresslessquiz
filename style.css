@@ -350,12 +350,13 @@ input[type=radio]:checked ~ .option{
 
 .modal-content-container {
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
-    top: 55%;
     margin: 20% auto;
     width: 90%;
     max-width: 600px;
+    top:100%;
+    left: 50%;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
