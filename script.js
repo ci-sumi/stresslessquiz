@@ -425,3 +425,24 @@ function exit(){
    userThanks.style.display="block"
     
 }
+
+document.getElementById("restart").addEventListener("click",restart)
+function restart(){
+    currentQuestionIndex =0;
+    correctAnswerCount =0;
+    clearOptionSelection();
+    enableRadioButtons();
+    var thankPrompt = document.querySelector(".thanks-user-prompt");
+    thankPrompt.style.display="none";
+    var quiz = document.querySelector(".quiz-question-container");
+    quiz.style.display="none";
+    var myButton = document.getElementById("myButton");
+    myButton.style.display ="block";
+    var nextQuestion = document.querySelector(".next-button-container");
+    nextQuestion.style.display ="block";
+    renderQuestion();
+    // startTimer();
+    displayCorrectAnswerCount();
+    document.getElementById("nextQuestion").textContent="NextQuestion";
+
+}
