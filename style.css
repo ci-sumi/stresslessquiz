@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0; 
     box-sizing: border-box;
 
 
@@ -19,7 +19,7 @@
 
 .startquiz_btn {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -28,11 +28,13 @@
 .startquiz_btn button {
     font-weight: bold;
     font-size: 20px;
-    padding: 4px;
+    padding: 10px 20px;
     color: black;
     border-color: #6C3922;
     background-color: hsl(199, 44%, 60%);
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 
 }
 
@@ -79,8 +81,9 @@ h3:before {
     background-color: #90BED4;
     font-size: bold;
     width: 100%;
-    position: relative;
+    position: fixed;
     margin-top: auto; /* Push footer to the bottom */
+    bottom: 0;
 
 
 }
@@ -99,6 +102,7 @@ h3:before {
     /* pointer-events: none; */
     transition: all 0.3s ease;
     box-shadow: 10px 25px 20px #6C3922;
+    
 
 }
 .rule-head{
@@ -127,7 +131,7 @@ h3:before {
     transform: translateX(-50%);
 }
 .rulesbuttons button{
-    padding: 5px 5px;
+    padding: 10px 20px;
     margin:0 5px;
     font-size: 20px;
     border: none;
@@ -501,4 +505,16 @@ input[type=radio]:checked ~ .option{
   }
   .thanks-user-prompt button:hover{
     background-color: black;
+  }
+
+  @media screen and(max-width:600px){
+    .header{
+        padding:10px;
+    }
+    .rules{
+        padding:10px;
+    }
+    .quiz-question-container{
+        padding: 10px;
+    }
   }
