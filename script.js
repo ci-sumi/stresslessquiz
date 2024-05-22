@@ -127,6 +127,11 @@ const quizQuestion = [
         options: ["Ignoring the situation", "Denying the stress", "Acceptance and adapting", "Blaming others"],
         answer: "Acceptance and adapting"
     },
+    {
+        question: "What is 'eustress' and how does it differ from 'distress'?",
+        options: ["Eustress: Positive experiences; Distress: Negative experiences", "Eustress: Exercise; Distress: Rest", "Eustress: Challenging situations; Distress: Smooth situations", "Eustress: Extreme stress; Distress: Mild stress"],
+        answer: "Eustress: Positive experiences; Distress: Negative experiences"
+    },
 
 
 ];
