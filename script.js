@@ -414,3 +414,14 @@ function displayResults(){
 
 
 }
+
+// Result Exit function
+document.getElementById("exit").addEventListener("click",exit)
+
+function exit(){
+    var exitResults = document.querySelector(".modal-user-results");
+    exitResults.style.display = "none";
+   var userThanks= document.querySelector(".thanks-user-prompt");
+   userThanks.style.display="block"
+    
+}
