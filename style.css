@@ -234,12 +234,15 @@ label{
 }
 .quiz-options-container {
     /* Adjust top position */
-    top: auto;
+    /* top: auto; */
     bottom: 20px;
     /* Adjust padding */
-    padding: 20px;
+    padding: 10px;
     /* Adjust width */
     width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 span label{
     width: 100%;
@@ -534,11 +537,14 @@ input[type=radio]:checked ~ .option{
         font-size: 10px;
     }
     .quiz-question-container{
-        padding: 10px;
+        padding: 5px;
         width: 350px;
+        height: auto;
+        
     }
     .quiz-options-container span{
-        width: 20%;
+        width: auto;
+        
     }
     .rules{
         width: 420px;
