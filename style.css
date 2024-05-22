@@ -14,7 +14,9 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-image: url('/assets/images/hero.jpg')
+    background-image: url('/assets/images/hero.jpg');
+    display: flex;
+    flex-direction: column;
 }
 
 .startquiz_btn {
@@ -131,9 +133,9 @@ h3:before {
     transform: translateX(-50%);
 }
 .rulesbuttons button{
-    padding: 10px 20px;
+    padding: 5px 5px;
     margin:0 5px;
-    font-size: 20px;
+    font-size: 12px;
     border: none;
     border-radius: 5px;
     background-color: #A6704E;
@@ -235,14 +237,15 @@ label{
 .quiz-options-container {
     /* Adjust top position */
     /* top: auto; */
-    bottom: 20px;
+    bottom: 50px;
     /* Adjust padding */
     padding: 10px;
     /* Adjust width */
     width: 90%;
     height: 200px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+   
 }
 span label{
     width: 100%;
