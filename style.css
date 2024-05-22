@@ -470,3 +470,35 @@ input[type=radio]:checked ~ .option{
   .modal-user-results button:hover{
     background-color: white;
   }
+  .thanks-user-prompt{
+    display: none;
+    position: fixed;
+    top:55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    max-width: 300px;
+    padding:32px 32px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .thanks-user-prompt p{
+    margin-bottom: 20px;
+    color: white;
+  }
+  .thanks-user-prompt button{
+    padding:20px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .thanks-user-prompt button:hover{
+    background-color: black;
+  }
