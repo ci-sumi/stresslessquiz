@@ -1,0 +1,3 @@
+[submodule "stresslessquiz"]
+  path = stresslessquiz
+  url = https://github.com/ci-sumi/stresslessquiz.git
