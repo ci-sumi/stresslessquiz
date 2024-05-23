@@ -282,23 +282,26 @@ span label{
     cursor: pointer;
     transition: transform 0.3s;
     font-weight: 600;
-    color: black;
-    border: 2px solid tomato;
+    color: #FFFFFF;;
+    border: 2px solid #6C3922;
     border-radius: 10px;
+    background-color: #1A5D84;
 
 }
 span label:hover{
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.2);
     transform: scale(1.12);
-    color:blue;
+    color:#1A5D84;
+    background-color: #FFFFFF;
 }
 input[type="radio"]{
     position: relative;
     display: none;
 }
 input[type=radio]:checked ~ .option{
-    background: whitesmoke;
+    background: #FFFFFF;
+    color: #1A5D84; 
 }
 .next-button-container{
     width: auto;
@@ -320,9 +323,13 @@ input[type=radio]:checked ~ .option{
 .next-button-container button{
     padding: 20px;
     border-radius: 20px;
+    background-color:  #1A5D84;
+    color: #FFFFFF;;
+    border: none;
+    cursor: pointer;
 }
 .next-button-container button:hover{
-    background-color: blue;
+    background-color:  #6C3922;;
     
 }
 @keyframes shining {
@@ -375,6 +382,7 @@ input[type=radio]:checked ~ .option{
     align-items: center;
     display: none;
     z-index: 2;
+    color: #FFFFFF;
 }
 
 /* .modal-content-container {
