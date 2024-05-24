@@ -143,19 +143,23 @@ h3:before {
     transform: translateX(-50%);
 }
 .rulesbuttons button{
-    padding: 5px 5px;
-    margin:0 5px;
-    font-size: 12px;
+    padding: 10px 20px;
+    margin:0 10px;
+    font-size: 14px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #A6704E;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
 
 .rulesbuttons button:hover{
     background-color: #6C3922;
-    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .userName{
