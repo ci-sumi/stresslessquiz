@@ -614,7 +614,10 @@ input[type=radio]:checked ~ .option{
    .quiz-option-container{
     width:90%;
    }
-    
+   .quiz-container {
+    padding: 10px; 
+    box-sizing: border-box;
+}
 
   }
  
