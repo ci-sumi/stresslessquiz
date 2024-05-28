@@ -269,6 +269,7 @@ radioButtons.forEach(radioButton => {
 function checkAnswer() {
        
     const selectOption = document.querySelector('input[name="option"]:checked');
+     const selectedOptionId = selectOption.id;
     const selectedOption = selectOption.value;
     const labelElement = selectOption.parentElement;
     const selectedOptionIndex = selectOption.value.charCodeAt(6) - 65; // Mapping 'A', 'B', 'C', 'D' to 0, 1, 2, 3
@@ -294,10 +295,12 @@ function checkAnswer() {
         // console.log("Correct Answer");
         // Apply green color to the selected option
         labelElement.classList.add("correct")
+        
     } else {
         // console.log("Wrong Answer");
         // Apply red color to the selected option
         labelElement.classList.add("wrong")
+       
     }
  
     // Disable all options after user selects one
@@ -312,6 +315,9 @@ function displayCorrectAnswerCount(){
     const CorrectAnswerCount = document.getElementById("player-score");
     CorrectAnswerCount.textContent = `${correctAnswerCount}of ${totalQuestions}`
 }
+radioButtons.forEach(radioButton => {
+    radioButton.addEventListener("click", checkAnswer);
+});
 //Timer
 let timeStarted = false;
 let timer = 15;
