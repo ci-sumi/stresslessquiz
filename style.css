@@ -440,11 +440,23 @@ input[type=radio]:checked ~ .option{
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .correct{
-    color:green;
+    background-color:green;
 }
 .wrong{
-    color: red;
+
+    background-color: red;
 }
+/* .option-label.correct::after {
+    content: '✓';
+    color: green;
+    margin-left: 10px;
+}
+
+.option-label.wrong::after {
+    content: '✗';
+    color: red;
+    margin-left: 10px;
+} */
 #timer {
     font-size: 15px;
     color: #ffffff;
