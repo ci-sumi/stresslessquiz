@@ -333,7 +333,7 @@ input[type=radio]:checked ~ .option{
     cursor: pointer;
 }
 .next-button-container button:hover{
-    background-color:  #6C3922;;
+    background-color:  #6C3922;
     
 }
 @keyframes shining {
@@ -370,16 +370,17 @@ input[type=radio]:checked ~ .option{
 
 
 .quiz-options-container {
-    position: absolute;
-    top: 275px;
+    position: fixed;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
+    width: 20%;
     max-width: 600px;
-    padding: 20px;
+    padding: 40px,40px;
     border-radius: 5px;
     height: 25%;
-    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
-    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
+    box-shadow:  0 0 10px rgba(0,0,0,0.3);
     border-radius: 5px;
     /* display: flex; */
     justify-content: space-around;
@@ -387,6 +388,8 @@ input[type=radio]:checked ~ .option{
     display: none;
     z-index: 2;
     color: #FFFFFF;
+    box-sizing: border-box;
+    
 }
 
 /* .modal-content-container {
@@ -403,8 +406,8 @@ input[type=radio]:checked ~ .option{
 
 
 .modal-content-container h1 {
-    font-size: 4vw;;
-    color: black;
+    font-size: 24px;
+    color: white;
     text-align: center;
     margin-top: 0;
 }
@@ -420,18 +423,21 @@ input[type=radio]:checked ~ .option{
 }
 
 .modal-button-container button {
-    background-color: black; /* blue */
+    background-color:  #6C3922; /* blue */
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+   
 }
 
 .modal-button-container button:hover {
-    background-color: #0056b3; /* darker blue on hover */
+    background-color: #6C3922; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .correct{
     color:green;
@@ -638,7 +644,7 @@ input[type=radio]:checked ~ .option{
 }
 .modal-user-results {
     width: 90%;
-    padding: 15px;
+    padding: 10px;
 }
 .modal-user-results h1 {
     font-size: 20px;
@@ -659,6 +665,9 @@ input[type=radio]:checked ~ .option{
 .thanks-user-prompt button {
     padding: 10px 15px;
     font-size: 14px; 
+}
+.thanks-user-prompt h1 {
+    font-size: 20px; 
 }
 
   }
