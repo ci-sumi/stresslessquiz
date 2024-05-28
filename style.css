@@ -504,37 +504,44 @@ input[type=radio]:checked ~ .option{
     top:52%;    
     left: 50%;
     transform:translate(-50%,-50%);
-    max-width: 300px;
-    /* width: 80%; */
-    padding:10px;
+    max-width: 90%;
+     width: 350px;
+    padding:20px;
     border-radius: 25px;
-    border: 2px solid red;
-    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
-    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+    border: 2px solid #6C3922;
+    background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    z-index: 1;
+    color: white;
+    z-index: 1000;
+    animation:fadeIn 0.5s ease-in-out; ;
   }
   .modal-user-results h1{
     margin-top:0;
-    font-size: 20px;
+    font-size: 24px;
     color: white;
   }
   .modal-user-results p{
     margin-bottom: 20px;
     color: white;
+    font-size: 18px;
   }
   .modal-user-results button{
     padding:10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: black;
+    background-color: #6C3922;
     color:white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .modal-user-results button:hover{
-    background-color: white;
+    background-color:  #A6704E;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+
   }
   .thanks-user-prompt{
     display: none;
@@ -617,6 +624,20 @@ input[type=radio]:checked ~ .option{
    .quiz-container {
     padding: 10px; 
     box-sizing: border-box;
+}
+.modal-user-results {
+    width: 90%;
+    padding: 15px;
+}
+.modal-user-results h1 {
+    font-size: 20px;
+}
+.modal-user-results p {
+    font-size: 16px;
+}
+.modal-user-results button {
+    padding: 10px 15px;
+    font-size: 14px;
 }
 
   }
