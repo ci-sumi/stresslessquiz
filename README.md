@@ -11,3 +11,21 @@ By catering to users of all ages, the quiz aims to provide both education and pr
 You can check out the [live website ](https://ci-sumi.github.io/stresslessquiz/)
 
 Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stresslessquiz.git)
+
+
+### Table of Contents
+
+
+
+
+
+
+
+
+## Site Owner Goals
+
+- **Engaging Quiz Experience** : Provide an interactive quiz with educational content about stress, fostering user engagement and learning.
+
+- **Visually Appealing and Accessible:** Ensure the quiz is attractive, user-friendly, and responsive across all devices.
+
+- **Motivate Quick Completion:** Encourage timely quiz completion and motivate users to improve their performance with each attempt.
