@@ -25,6 +25,14 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [Typography](#typography)
      + [Layout](#layout)
      + [Wireframes](#wireframes)
+   * [Features] (#features)
+     + [Home Page](#home-page)
+     + [Rule Box](#rule-box)
+     + [Quix Box](#quiz-box)
+     + [Result Box](#result-box)
+     + [General Features](#general-features)
+     + [Future Implementation](#future-implementation)
+     
 
 
 
@@ -187,7 +195,7 @@ After selecting an answer, users can click the "Next Question" button to proceed
 ![Screenshot of Warning prompt](docs/readme_images/warning-prompt.png)
 
 
-## ResultBox
+## Result Box
 
 The result box appears at the end of the quiz, summarizing the user's performance.
 
@@ -200,3 +208,34 @@ Users can choose to restart the quiz from here or exit to the home page.
 ![Screenshot of Resultbox](docs/readme_images/result-box.png)
 
 ![Screenshot of Thanks](docs/readme_images/thanks.png)
+
+### General Features
+
+The website features a responsive design and includes:
+
+Favicon: Carefully chosen to align with the overall theme.
+
+![Screenshot Favicon Image](/assets/images/hero.jpg)
+
+
+
+### Future Implementation
+ - Personalized Recommendations:After displaying results, provide recommendations based on the user's performance.
+
+ - Professional Resources:Add links or contacts for mental health professionals.
+
+ - Social Media Sharing:Enable users to share their scores on social media.
+
+
+ ## Testing
+  
+  ### Validator Testing
+
+  - #### HTML
+
+      - HTML passed through the official W3C Markup Validator without any errors. 
+          - [W3 Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-sumi.github.io%2Fstresslessquiz%2F)
+
+ - #### CSS
+ 
+
