@@ -19,6 +19,12 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [First Time User](#first-time-user)
      + [Returning User](#returning-user)
      + [Frequent User](#frequent-user)
+   * [Design](#design)
+     + [Imagery](#imagery)
+     + [Color Scheme](#color-scheme)
+     + [Typography](#typography)
+     + [Layout](#layout)
+     + [Wireframes](#wireframes)
 
 
 
@@ -129,6 +135,8 @@ The color scheme was generated using an uploaded brain image in Casava.[Canva](h
  
 
 ### Wireframes
+<details>
+<summary>Wireframe</summary>
 
  Wireframes are created using [Balsamiq](https://balsamiq.com/)
 
@@ -140,7 +148,55 @@ The color scheme was generated using an uploaded brain image in Casava.[Canva](h
  ![Wireframe Result Box](docs/readme_images/resultbox.png)
  ![Wireframe Thanks](docs/readme_images/restartquiz.png)
 
+ </details>
 
- 
+ ## Features
+
+ ### Home Page
+ The home page of the Stressless Quiz welcomes users with a title "StresslessQuiz"and with calming design, featuring a soothing color palette inspired by an image of a brain symbolizing stress relief.
+
+ A prominent "Start Quiz" button invites users to begin their journey towards understanding and managing stress better.
+
+ A minimalistic footer displays a copyright notice.
+
+![Screenshot of Home Page](docs/readme_images/home.png)
+
+### Rule Box
+The rule box contains the rules of the quiz and includes an input field where users must enter their name. This input is compulsory for users to proceed with the quiz.
+There is a "Continue" button for users to proceed to the quiz after entering their name.
+An "Exit" button allows users to go back to the start page if they choose not to continue.
+![Screenshot of Rulebox](docs/readme_images/rulebox.png)
+
+## Quiz Box
+The quiz box is where the main action happens, containing a series of stress-related questions to test the user's knowledge.
+
+Each question is presented with four multiple-choice options, allowing users to select their answer.
+
+A score board is included to display the user's current score, showing how many questions they have answered correctly.
+
+The current question number is prominently displayed, indicating the user's progress through the quiz (e.g., "Question 3 of 10").
+
+A timer counts down for each question, adding a sense of urgency. If the timer runs out before an answer is selected, a timeout message will be displayed, and the user will be prompted to proceed to the next question.
+
+After selecting an answer, users can click the "Next Question" button to proceed to the next question. If a user attempts to proceed without selecting an option, they will be prompted to make a selection before continuing.
+
+![Screenshot of Quizbox](docs/readme_images/quiz-box.png)
+
+![Screenshot of Timeout](docs/readme_images/time-out.png)
+
+![Screenshot of Warning prompt](docs/readme_images/warning-prompt.png)
 
 
+## ResultBox
+
+The result box appears at the end of the quiz, summarizing the user's performance.
+
+It displays the user's name, total correct answers, total wrong answers, and a percentage grade.
+
+A congratulatory message or encouragement to keep practicing is shown based on the user's score.
+
+Users can choose to restart the quiz from here or exit to the home page.
+
+![Screenshot of Resultbox](docs/readme_images/result-box.png)
+
+![Screenshot of Thanks](docs/readme_images/thanks.png)
