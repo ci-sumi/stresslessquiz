@@ -236,8 +236,8 @@ span label{
 
 }
 span label:hover{
-    /* -ms-transform: scale(1.12);
-    -webkit-transform: scale(1.2); */
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.2);
     transform: scale(1.12);
     color:#1A5D84;
     background-color: #FFFFFF;
