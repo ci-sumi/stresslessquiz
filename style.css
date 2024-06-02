@@ -580,25 +580,93 @@ input[type=radio]:checked ~ .option{
   }
   
  
-   @media screen and (orientation: landscape) {
-        .quiz-question-container {
-            /* Your existing styles */
-            width: 80%; /* Adjust the width as needed */
-            max-width: 500px; /* Set a maximum width */
-            height: auto; /* Allow the height to adjust based on content */
-            max-height: 80%; /* Set a maximum height */
-            margin: 0 auto; /* Center the container horizontally */
-            padding: 30px; /* Add some padding for better spacing */
-        }
-    
-        /* Adjust styles for options and next button */
-        .quiz-question-container .quiz-options-container {
-            width: 90%; /* Adjust the width as needed */
-            padding: 15px; /* Add padding for better spacing */
-        }
-    
-        .quiz-question-container .next-button-container {
-            margin-top: 20px; /* Adjust the margin as needed */
-        }
+  @media screen and (orientation: landscape) {
+    .header h3 {
+        padding: 10px;
+        font-size: 20px;
     }
-  }    
+
+    .rules {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .rulesbuttons button {
+        font-size: 10px;
+    }
+
+    .quiz-question-container {
+        padding: 5px;
+        width: 90%; /* Adjusted width to fit better */
+        max-width: 600px; /* Added max-width for better responsiveness */
+        height: auto;
+    }
+
+    .quiz-options-container span {
+        width: auto;
+    }
+
+    .rules {
+        width: 90%; /* Adjusted width for landscape mode */
+        max-width: 420px; /* Added max-width for better responsiveness */
+    }
+
+    span label:hover {
+        transform: scale(1.12); /* Reverted to a fixed scale value */
+        color: blue;
+    }
+
+    .quiz-option-container {
+        width: 90%;
+    }
+
+    .quiz-container {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .modal-user-results {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .modal-user-results h1 {
+        font-size: 20px;
+    }
+
+    .modal-user-results p {
+        font-size: 16px;
+    }
+
+    .modal-user-results button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .thanks-user-prompt {
+        padding: 15px;
+    }
+
+    .thanks-user-prompt p {
+        font-size: 16px;
+    }
+
+    .thanks-user-prompt button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .thanks-user-prompt h1 {
+        font-size: 20px;
+    }
+
+    .quiz-options-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-user-prompt {
+        width: 90%;
+        padding: 15px;
+    }
+}
