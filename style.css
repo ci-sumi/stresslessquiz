@@ -590,7 +590,7 @@ input[type=radio]:checked ~ .option{
             padding: 5px;
             font-size: 12px;
             width: 100%;
-            top:55%;    
+            top:40%;    
         }
         .rulesbuttons button {
             font-size: 12px;
@@ -598,8 +598,8 @@ input[type=radio]:checked ~ .option{
         .quiz-question-container {
             padding: 5px;
             width: 100%;
-            height: 55%;
             margin: auto;
+            height: auto;
         }
         .quiz-options-container span {
             width: 100%;
