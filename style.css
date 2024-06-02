@@ -579,52 +579,42 @@ input[type=radio]:checked ~ .option{
 }
   }
   
-  @media screen and (max-width: 734px) {
+  @media screen and (min-width: 601px) and (max-width: 667px) {
     .header h3,
     .rules {
-        padding: 5px; /* Adjust padding for better layout */
-        font-size: 18px; /* Adjust font size for better readability */
+        padding: 5px;
+        font-size: 18px;
     }
     .quiz-options-container,
     .modal-user-prompt {
-        width: 70%; /* Adjust width for better layout */
-        padding: 10px; /* Adjust padding for better layout */
+        width: 95%;
+        padding: 10px;
+    }
+    .quiz-question-container{
+        padding: 5px;
+        width: 200px;
+        height: auto;
+        
     }
 }
 
-@media screen and (max-width: 684px) {
+/* Styles for 684px width */
+@media screen and (min-width: 601px) and (max-width: 684px) {
     .rules {
-        width: 90%; /* Adjust width to prevent overflow */
+        width: 90%;
     }
     .modal-user-results,
     .thanks-user-prompt {
-        padding: 5px; /* Adjust padding for better layout */
+        padding: 5px;
     }
 }
 
-@media screen and (max-width: 667px) {
-    .header h3,
-    .rules {
-        padding: 5px; /* Adjust padding for better layout */
-        font-size: 18px; /* Adjust font size for better readability */
-    }
-    .quiz-options-container,
-    .modal-user-prompt {
-        width: 80%; /* Adjust width for better layout */
-        padding: 10px; /* Adjust padding for better layout */
-    }
+/* Styles for 734px width */
+@media screen and (min-width: 601px) and (max-width: 734px) {
+    /* Add specific adjustments for 734px width if needed */
 }
 
-@media screen and (max-width: 736px) {
+/* Styles for 736px width */
+@media screen and (min-width: 601px) and (max-width: 736px) {
     /* Add specific adjustments for 736px width if needed */
-    .header h3,
-    .rules {
-        padding: 5px; /* Adjust padding for better layout */
-        font-size: 18px; /* Adjust font size for better readability */
-    }
-    .quiz-options-container,
-    .modal-user-prompt {
-        width: 70%; /* Adjust width for better layout */
-        padding: 10px; /* Adjust padding for better layout */
-    }
 }
