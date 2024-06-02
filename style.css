@@ -690,12 +690,12 @@ input[type=radio]:checked ~ .option{
     
     .rules {
       width: 90%; /* Adjusted width for landscape */
-      max-width: 300px; /* Added max-width for landscape */
+      max-width: 100; /* Added max-width for landscape */
     }
     
     .quiz-question-container {
       width: 90%; /* Adjusted width for landscape */
-      max-width: 300px; /* Added max-width for landscape */
+      max-width: 100px; /* Added max-width for landscape */
     }
   
     span label:hover {
