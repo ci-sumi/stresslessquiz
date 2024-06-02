@@ -593,12 +593,12 @@ input[type=radio]:checked ~ .option{
     }
     .quiz-question-container{
         padding: 5px;
-        width: 200px;
+        width: 100%;
         height: auto;
         
     }
     .quiz-options-container span{
-        width: auto;
+        width: 100%;
         
     }
     .rules{
@@ -610,12 +610,12 @@ input[type=radio]:checked ~ .option{
         color: blue;
     }
    .quiz-option-container{
-    width:85%;
+    width:100%;
    }
    .quiz-container {
     padding: 10px; 
     box-sizing: border-box;
-    max-height: 400px;
+    max-height: 200px;
     overflow-y: auto;
 }
 .modal-user-results {
@@ -646,11 +646,11 @@ input[type=radio]:checked ~ .option{
     font-size: 10px; 
 }
 .quiz-options-container{
-    width: 80%;
+    width: 100%;
     padding: 10px;
 }
 .modal-user-prompt{
-    width: 80%;
+    width: 100%;
     padding: 10px;
 }
     
