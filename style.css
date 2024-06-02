@@ -505,7 +505,7 @@ input[type=radio]:checked ~ .option{
     margin-bottom: 20px; 
 }
 
-  @media screen and (max-width:600px) and (orientation: landscape){
+  @media screen and (max-width:600px){
     .header h3{
         padding:10px;
         font-size: 20px;
@@ -579,5 +579,29 @@ input[type=radio]:checked ~ .option{
 }
   }
   
-    
+  @media screen and (orientation: landscape) {
+    .startquiz_btn {
+        top: 40%;
+    }
+
+    .startquiz_btn button {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .rules {
+        width: 400px;
+    }
+
+    .rules .rule-head {
+        font-size: 24px;
+    }
+
+    .rules .rule {
+        font-size: 16px;
+    }
+}
    
