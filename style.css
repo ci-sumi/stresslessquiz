@@ -580,78 +580,73 @@ input[type=radio]:checked ~ .option{
   }
   
   @media screen and (min-width: 601px) and (max-width: 736px) {
-    .header h3{
-        padding:10px;
-        font-size: 20px;
+    .header h3 {
+        padding: 10px;
+        font-size: 18px;
     }
-    .rules{
-        padding:7px;
-        font-size: 10px;
+    .rules {
+        padding: 7px;
+        font-size: 12px;
+        width: 100%;
     }
-    .rulesbuttons button{
-        font-size: 10px;
+    .rulesbuttons button {
+        font-size: 12px;
     }
-    .quiz-question-container{
+    .quiz-question-container {
         padding: 5px;
         width: 100%;
         height: auto;
-        
     }
-    .quiz-options-container span{
+    .quiz-options-container span {
         width: 100%;
-        
-    }
-    .rules{
-        width: 200px;
-        
     }
     span label:hover {
         transform: scale(var(--scale-factor));
         color: blue;
     }
-   .quiz-option-container{
-    width:100%;
-   }
-   .quiz-container {
-    padding: 10px; 
-    box-sizing: border-box;
-    max-height: 200px;
-    overflow-y: auto;
-}
-.modal-user-results {
-    width: 80%;
-    padding: 10px;
-}
-.modal-user-results h1 {
-    font-size: 10px;
-}
-.modal-user-results p {
-    font-size: 10px;
-}
-.modal-user-results button {
-    padding: 10px 10px;
-    font-size: 10px;
-}
-.thanks-user-prompt {
-    padding: 10px; 
-}
-.thanks-user-prompt p {
-    font-size: 10px; 
-}
-.thanks-user-prompt button {
-    padding: 10px 10px;
-    font-size: 10px; 
-}
-.thanks-user-prompt h1 {
-    font-size: 10px; 
-}
-.quiz-options-container{
-    width: 100%;
-    padding: 10px;
-}
-.modal-user-prompt{
-    width: 100%;
-    padding: 10px;
-}
+    .quiz-option-container {
+        width: 100%;
+    }
+    .quiz-container {
+        padding: 10px;
+        box-sizing: border-box;
+        max-height: 400px; /* Adjust the max-height as needed */
+        overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+    }
+    .modal-user-results {
+        width: 100%;
+        padding: 10px;
+    }
+    .modal-user-results h1 {
+        font-size: 16px;
+    }
+    .modal-user-results p {
+        font-size: 14px;
+    }
+    .modal-user-results button {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .thanks-user-prompt {
+        padding: 10px;
+    }
+    .thanks-user-prompt p {
+        font-size: 14px;
+    }
+    .thanks-user-prompt button {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .thanks-user-prompt h1 {
+        font-size: 16px;
+    }
+    .quiz-options-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .modal-user-prompt {
+        width: 100%;
+        padding: 10px;
+    }
     
 }
