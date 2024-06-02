@@ -579,37 +579,26 @@ input[type=radio]:checked ~ .option{
 }
   }
   
-  @media screen and (orientation: landscape) {
-    .startquiz_btn {
-        top: 40%;
+ 
+   @media screen and (orientation: landscape) {
+        .quiz-question-container {
+            /* Your existing styles */
+            width: 80%; /* Adjust the width as needed */
+            max-width: 500px; /* Set a maximum width */
+            height: auto; /* Allow the height to adjust based on content */
+            max-height: 80%; /* Set a maximum height */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 30px; /* Add some padding for better spacing */
+        }
+    
+        /* Adjust styles for options and next button */
+        .quiz-question-container .quiz-options-container {
+            width: 90%; /* Adjust the width as needed */
+            padding: 15px; /* Add padding for better spacing */
+        }
+    
+        .quiz-question-container .next-button-container {
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
     }
-
-    .startquiz_btn button {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    .rules {
-        width: 400px;
-    }
-
-    .rules .rule-head {
-        font-size: 24px;
-    }
-
-    .rules .rule {
-        font-size: 16px;
-    }
-    .quiz-question-container {
-        width: 80%; /* Adjust the width as needed */
-        max-width: 600px; /* Set a maximum width */
-        height: auto; /* Allow the height to adjust based on content */
-        max-height: 80%; /* Set a maximum height */
-        margin: 0 auto; /* Center the container horizontally */
-        padding: 30px; /* Add some padding for better spacing */
-    }
-}
-   
+  }    
