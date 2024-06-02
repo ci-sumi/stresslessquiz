@@ -582,10 +582,10 @@ input[type=radio]:checked ~ .option{
   @media screen and (min-width: 601px) and (max-width: 736px) {
     .header h3 {
         padding: 10px;
-        font-size: 18px;
+        font-size: 10px;
     }
     .rules {
-        padding: 7px;
+        padding: 10px;
         font-size: 12px;
         width: 100%;
     }
@@ -594,27 +594,27 @@ input[type=radio]:checked ~ .option{
     }
     .quiz-question-container {
         padding: 5px;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     .quiz-options-container span {
-        width: 100%;
+        width: 50%;
     }
     span label:hover {
         transform: scale(var(--scale-factor));
         color: blue;
     }
     .quiz-option-container {
-        width: 100%;
+        width: 50%;
     }
     .quiz-container {
         padding: 10px;
         box-sizing: border-box;
-        max-height: 400px; /* Adjust the max-height as needed */
+        max-height: 250px; /* Adjust the max-height as needed */
         overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
     }
     .modal-user-results {
-        width: 100%;
+        width: 50%;
         padding: 10px;
     }
     .modal-user-results h1 {
@@ -641,11 +641,11 @@ input[type=radio]:checked ~ .option{
         font-size: 16px;
     }
     .quiz-options-container {
-        width: 100%;
+        width: 50%;
         padding: 10px;
     }
     .modal-user-prompt {
-        width: 100%;
+        width: 50%;
         padding: 10px;
     }
     
