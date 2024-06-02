@@ -622,8 +622,8 @@ input[type=radio]:checked ~ .option{
   
   @media screen and (orientation: landscape) {
     .quiz-question-container {
-        width: 80%; /* Adjust width for landscape */
-        max-width: 80%; /* Adjust max-width for landscape */
+        width:auto;/* Adjust width for landscape */
+        max-width:auto; /* Adjust max-width for landscape */
         padding: 1.25rem; /* Adjust padding for landscape */
         font-size: 2rem; /* Adjust font size for landscape */
     }
