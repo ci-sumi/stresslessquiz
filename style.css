@@ -505,7 +505,7 @@ input[type=radio]:checked ~ .option{
     margin-bottom: 20px; 
 }
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:734px){
     .header h3{
         padding:10px;
         font-size: 20px;
@@ -578,29 +578,4 @@ input[type=radio]:checked ~ .option{
     padding: 15px;
 }
   }
-  @media screen and (max-width: 734px) {
-    /* Add specific adjustments for 734px width if needed */
-}
-
-@media screen and (max-width: 684px) {
-    .rules {
-        width: 90%; /* Adjust width to prevent overflow */
-    }
-    .modal-user-results,
-    .thanks-user-prompt {
-        padding: 5px; /* Adjust padding for better layout */
-    }
-}
-
-@media screen and (max-width: 667px) {
-    .header h3,
-    .rules {
-        padding: 5px; /* Adjust padding for better layout */
-        font-size: 18px; /* Adjust font size for better readability */
-    }
-    .quiz-options-container,
-    .modal-user-prompt {
-        width: 95%; /* Adjust width for better layout */
-        padding: 10px; /* Adjust padding for better layout */
-    }
-}
+  

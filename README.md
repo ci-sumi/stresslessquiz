@@ -32,6 +32,17 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [Result Box](#result-box)
      + [General Features](#general-features)
      + [Future Implementation](#future-implementation)
+   * [Testing](#testing)
+     + [Validator Testing](#validator-testing)
+       +[HTML](#html)
+       +[CSS](#css)
+       +[Javascript](#javascript)
+     + [ Accessibility](#accessibility)
+     + [Button Testing](#button testing)
+     + [Comprehensive Game Testing](#comprehensive-game-testing)
+     + [Rigorous Browser Testing](#rigorous-browser-testing)
+     + [Comprehensive Device Testing](#comprehensive-device-testing)
+
      
 
 
@@ -237,5 +248,33 @@ Favicon: Carefully chosen to align with the overall theme.
           - [W3 Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-sumi.github.io%2Fstresslessquiz%2F)
 
  - #### CSS
- 
+      - CSS passed through the official W3C CSS Validator without any errors. 
+       -[CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fci-sumi.github.io%2Fstresslessquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+ - ### Javascript
+    - Js passed through the official Jshint without any errors.
+      -[Jshint Validator](https://jshint.com/)
+      ![JSHint Validator Results](docs/readme_images/jshintvalidation.png)
+
+ - ### Accessibility 
+      - Lighthouse report shows excellent scores for Performance, Accessibility, and Best Practices, each achieving a perfect score of 100. The SEO score is also quite high at 91.
+        - [Lighthouse Screenshot](docs/readme_images/lighthouse.png)
+
+- ### Button Testing
+   - All buttons, including the 'Start Quiz', answer option buttons, 'Next', 'Submit', and modal control buttons, were manually tested to ensure proper navigation and functionality within the Stressless Quiz application.
+
+- ### Comprehensive Game Testing
+   - Conduct a thorough evaluation alongside friends and family to ensure functionality and user satisfaction:
+      - Randomize the arrangement of questions and answers to prevent predictability.
+
+      - Validate the cessation of the timer accurately upon user interaction, guaranteeing precise time management during gameplay.
+
+     - Ascertain clear indication of the current question displayed.
+
+     - Assess the effectiveness of visual cues, such as color alterations and shake animations, in providing intuitive feedback to the player.
+     - Confirm the accuracy of score tracking mechanisms, including the proper incrementation of incorrect scores when no answer is selected.
+- #### Rigorous Browser Testing
+   - The website underwent meticulous examination on Google Chrome and Firefox browsers, revealing no noted issues.
+
+- #### Comprehensive Device Testing
+  - Extensive testing across various devices, including Desktops, Laptops, iPhone 8, iPhone 11 Pro Max, and Xiaomi Redmi Note 11, ensured responsiveness across diverse screen sizes in both portrait and landscape orientations. Additionally, compatibility assessments were conducted using Chrome developer tools across a spectrum of devices, affirming structural integrity across differing screen dimensions.
