@@ -12,7 +12,7 @@ document.getElementById("myButton").addEventListener("click", function () {
 // function for Exitbutton click
 document.getElementById("myExit").addEventListener("click", function () {
     var rulesBox = document.querySelector(".rules");
-    rulesBox.style.display = "none"
+    rulesBox.style.display = "none";
 });
 document.getElementById("myContinue").addEventListener("click", function () {
     showUserprompt = true;
@@ -27,7 +27,7 @@ document.getElementById("myContinue").addEventListener("click", function () {
         quizbox.style.display = "block";
         var myButton = document.getElementById("myButton");
         myButton.style.display = "none";
-        renderQuestion()
+        renderQuestion();
         startTimer();
     }
 
@@ -42,12 +42,12 @@ function clearPlaceholder() {
 function setPlaceholder() {
     var userName = document.getElementById("userName");
     if (userName.value.trim() === "") {
-        userName.value = "Field required"
+        userName.value = "Field required";
     }
 }
 
 document.getElementById("userName").addEventListener("input",function(event){
-    const namePattern = /^[A-Za-z]*$/
+    const namePattern = /^[A-Za-z]*$/;
     const userName = event.target;
     if(!namePattern.test(userName.value)){
         userName.value = userName.value.replace(/[^a-zA-Z]/g,'');
@@ -65,13 +65,13 @@ document.getElementById("userName").addEventListener("input",function(event){
 
 // })
 function closeOptionModal() {
-    var closeOptionModal = document.querySelector(".quiz-options-container")
-    closeOptionModal.style.display = "none"
+    var closeOptionModal = document.querySelector(".quiz-options-container");
+    closeOptionModal.style.display = "none";
     var nextQuestion = document.querySelector(".next-button-container");
     nextQuestion.style.display ="block";
-    console.log("stopping timer")
+    console.log("stopping timer");
     startTimer();
-    console.log("timer is stopped")
+    console.log("timer is stopped");
     
     
     // startTimer();
@@ -139,12 +139,12 @@ const quizQuestion = [
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]
+        [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
 
 }
-const shuffleQuestionArray = shuffleArray(quizQuestion)
+const shuffleQuestionArray = shuffleArray(quizQuestion);
 
 let currentQuestionIndex = 0;
 const totalQuestions = quizQuestion.length;
@@ -156,7 +156,7 @@ const optionFourLabel = document.getElementById("option-four-label");
 // "Add functionality to dynamically display question number during quiz progression"
 function displayQuestionNumber(){
     const questionNumberDisplay = document.getElementById("question-number");
-    questionNumberDisplay.textContent = `${currentQuestionIndex+1} of ${totalQuestions}`
+    questionNumberDisplay.textContent = `${currentQuestionIndex+1} of ${totalQuestions}`;
 }
 
 
@@ -177,14 +177,14 @@ function renderQuestion() {
 
 //clear selection from all options
 function clearOptionSelection() {
-    const allOption = document.querySelectorAll('input[name=option]')
+    const allOption = document.querySelectorAll('input[name=option]');
     allOption.forEach(option => {
         option.checked = false;
 
     });
 }
 function enableRadioButtons() {
-    const radioButtons = document.querySelectorAll('input[name="option"]')
+    const radioButtons = document.querySelectorAll('input[name="option"]');
     radioButtons.forEach(radioButton => {
         radioButton.disabled = false;
     });
@@ -200,11 +200,11 @@ function enableRadioButtons() {
 document.getElementById("nextQuestion").addEventListener("click", () => {
 
     // Add logic to handle unselected options in quiz
-    const selectOption = document.querySelector('input[name="option"]:checked')
+    const selectOption = document.querySelector('input[name="option"]:checked');
     
 
     if (!selectOption) {
-        var option = document.querySelector(".quiz-options-container")
+        var option = document.querySelector(".quiz-options-container");
         option.style.display = "flex";
         var nextQuestion = document.querySelector(".next-button-container");
         nextQuestion.style.display ="none";
@@ -217,7 +217,7 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
         renderQuestion();
         startTimer();
         if(currentQuestionIndex===quizQuestion.length-1){
-            document.getElementById("nextQuestion").textContent="Result"
+            document.getElementById("nextQuestion").textContent="Result";
         }
     } else {
         var nextQuestion = document.querySelector(".next-button-container");
@@ -294,12 +294,12 @@ function checkAnswer() {
        
         // console.log("Correct Answer");
         // Apply green color to the selected option
-        labelElement.classList.add("correct")
+        labelElement.classList.add("correct");
         
     } else {
         // console.log("Wrong Answer");
         // Apply red color to the selected option
-        labelElement.classList.add("wrong")
+        labelElement.classList.add("wrong");
        
     }
  
@@ -313,7 +313,7 @@ function checkAnswer() {
 }
 function displayCorrectAnswerCount(){
     const CorrectAnswerCount = document.getElementById("player-score");
-    CorrectAnswerCount.textContent = `${correctAnswerCount}of ${totalQuestions}`
+    CorrectAnswerCount.textContent = `${correctAnswerCount}of ${totalQuestions}`;
 }
 radioButtons.forEach(radioButton => {
     radioButton.addEventListener("click", checkAnswer);
@@ -346,7 +346,7 @@ function startTimer(){
     ansSelected = false;
     updatetime();
     if(timeInterval){
-        clearInterval(timeInterval)
+        clearInterval(timeInterval);
 
     }
     timeInterval = setInterval(updatetime,1000);
@@ -364,7 +364,7 @@ function promptUserOption(){
     
     stopTimer();    
     // console.log("timer is stopped")
-     var prompt = document.querySelector(".modal-user-prompt") 
+     var prompt = document.querySelector(".modal-user-prompt");
      prompt.style.display="block";
      var nextQuestion = document.querySelector(".next-button-container");
      nextQuestion.style.display ="none";
@@ -388,12 +388,12 @@ function renderFirstQuestion(){
 renderFirstQuestion();
 function ok(){
     startTimer();
-    var prompt = document.querySelector(".modal-user-prompt") 
+    var prompt = document.querySelector(".modal-user-prompt");
      prompt.style.display="none";
      var nextQuestion = document.querySelector(".next-button-container");
      nextQuestion.style.display ="block";
      
-     var options = document.querySelectorAll(`input[type="radio"]`)
+     var options = document.querySelectorAll(`input[type="radio"]`);
      options.forEach(option=>{
       option.disabled=false;
      });
@@ -420,34 +420,34 @@ function displayResults(){
     
     const qwrightanswers = document.getElementById("qright");
     qwrightanswers.textContent= `Correct Answers: ${correctAnswerCount}`;
-    const attempts = document.getElementById("attempt")
-    attempts.textContent = `Attempts:${currentQuestionIndex}`
+    const attempts = document.getElementById("attempt");
+    attempts.textContent = `Attempts:${currentQuestionIndex}`;
     const qwronganswers = document.getElementById("qwrong");
     qwronganswers.textContent = `Wrong Answers: ${currentQuestionIndex-correctAnswerCount}`;
     const grade = document.getElementById("grade");
     const percentage = (correctAnswerCount/totalQuestions)*100;
     grade.textContent =`Grdae : ${percentage.toFixed(2)}%`;
-    const congrat = document.getElementById("congrat")
-    congrat.textContent =percentage>=50 ? "congratulations" : "Keep Practicing"
+    const congrat = document.getElementById("congrat");
+    congrat.textContent =percentage>=50 ? "congratulations" : "Keep Practicing";
     const results = document.querySelector(".modal-user-results");
-    results.style.display = "block"
+    results.style.display = "block";
 
 
 
 }
 
 // Result Exit function
-document.getElementById("exit").addEventListener("click",exit)
+document.getElementById("exit").addEventListener("click",exit);
 
 function exit(){
     var exitResults = document.querySelector(".modal-user-results");
     exitResults.style.display = "none";
    var userThanks= document.querySelector(".thanks-user-prompt");
-   userThanks.style.display="block"
+   userThanks.style.display="block";
     
 }
 
-document.getElementById("restart").addEventListener("click",restart)
+document.getElementById("restart").addEventListener("click",restart);
 function restart(){
     currentQuestionIndex =0;
     correctAnswerCount =0;
