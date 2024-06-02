@@ -585,15 +585,15 @@ input[type=radio]:checked ~ .option{
         font-size: 20px;
     }
     .rules{
-        padding:10px;
-        font-size: 14px;
+        padding:7px;
+        font-size: 10px;
     }
     .rulesbuttons button{
         font-size: 10px;
     }
     .quiz-question-container{
         padding: 5px;
-        width: 300px;
+        width: 200px;
         height: auto;
         
     }
@@ -602,7 +602,7 @@ input[type=radio]:checked ~ .option{
         
     }
     .rules{
-        width: 400px;
+        width: 200px;
         
     }
     span label:hover {
@@ -617,11 +617,11 @@ input[type=radio]:checked ~ .option{
     box-sizing: border-box;
 }
 .modal-user-results {
-    width: 85%;
+    width: 80%;
     padding: 10px;
 }
 .modal-user-results h1 {
-    font-size: 15px;
+    font-size: 10px;
 }
 .modal-user-results p {
     font-size: 10px;
@@ -631,7 +631,7 @@ input[type=radio]:checked ~ .option{
     font-size: 10px;
 }
 .thanks-user-prompt {
-    padding: 15px; 
+    padding: 10px; 
 }
 .thanks-user-prompt p {
     font-size: 10px; 
@@ -641,14 +641,14 @@ input[type=radio]:checked ~ .option{
     font-size: 10px; 
 }
 .thanks-user-prompt h1 {
-    font-size: 15px; 
+    font-size: 10px; 
 }
 .quiz-options-container{
-    width: 85%;
+    width: 80%;
     padding: 10px;
 }
 .modal-user-prompt{
-    width: 85%;
+    width: 80%;
     padding: 10px;
 }
     
