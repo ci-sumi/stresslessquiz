@@ -689,12 +689,12 @@ input[type=radio]:checked ~ .option{
     }
     
     .rules {
-      width: 90%; /* Adjusted width for landscape */
+      width: 50%; /* Adjusted width for landscape */
       max-width: 420px; /* Added max-width for landscape */
     }
     
     .quiz-question-container {
-      width: 90%; /* Adjusted width for landscape */
+      width: 50%; /* Adjusted width for landscape */
       max-width: 600px; /* Added max-width for landscape */
     }
   
