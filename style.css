@@ -580,7 +580,7 @@ input[type=radio]:checked ~ .option{
   }
   
     
-    @media screen and (min-width: 601px) and (max-width: 736px) {
+    @media screen and (min-width: 601px) and (max-width: 667px) {
         .header h3 {
             padding: 5px;
             font-size: 18px;
@@ -589,16 +589,14 @@ input[type=radio]:checked ~ .option{
             padding: 5px;
             font-size: 12px;
             width: 100%;
-            top:60%;    
+            top:40%;    
         }
         .rulesbuttons button {
             font-size: 12px;
         }
         .quiz-question-container {
-            padding: 5px;
-            width: auto;
-            margin: auto;
-            height: auto;
+           display: flex;
+           flex-direction: row;
         }
         .quiz-options-container span {
             width: 100%;
