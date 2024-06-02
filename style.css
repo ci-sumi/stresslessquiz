@@ -582,15 +582,15 @@ input[type=radio]:checked ~ .option{
   @media screen and (min-width: 601px) and (max-width: 736px) {
     .header h3 {
         padding: 10px;
-        font-size: 10px;
+        font-size: 14px;
     }
     .rules {
-        padding: 10px;
+        padding: 5px;
         font-size: 12px;
         width: 100%;
     }
     .rulesbuttons button {
-        font-size: 12px;
+        font-size: 10px;
     }
     .quiz-question-container {
         padding: 5px;
@@ -610,8 +610,8 @@ input[type=radio]:checked ~ .option{
     .quiz-container {
         padding: 10px;
         box-sizing: border-box;
-        max-height: 250px; /* Adjust the max-height as needed */
-        overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+        /* max-height: 250px; 
+        overflow-y: auto; */
     }
     .modal-user-results {
         width: 50%;
