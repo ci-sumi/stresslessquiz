@@ -590,6 +590,7 @@ input[type=radio]:checked ~ .option{
             padding: 5px;
             font-size: 12px;
             width: 100%;
+            top:55%;    
         }
         .rulesbuttons button {
             font-size: 12px;
@@ -597,7 +598,7 @@ input[type=radio]:checked ~ .option{
         .quiz-question-container {
             padding: 5px;
             width: 100%;
-            height: auto;
+            height: 55%;
             margin: auto;
         }
         .quiz-options-container span {
@@ -614,7 +615,7 @@ input[type=radio]:checked ~ .option{
         .quiz-container {
             padding: 10px;
             box-sizing: border-box;
-            max-height: 400px; /* Adjust the max-height as needed */
+            max-height: 55%; /* Adjust the max-height as needed */
             overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
             width: 100%;
             margin: auto;
