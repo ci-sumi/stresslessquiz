@@ -316,7 +316,7 @@ input[type=radio]:checked ~ .option{
     z-index: 2;
     color: #FFFFFF;
     box-sizing: border-box;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: none;
     
@@ -344,20 +344,20 @@ input[type=radio]:checked ~ .option{
 
 
 .modal-content-container h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
     margin-top: 0;
 }
 
 .modal-content-container p {
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 }
 
 .modal-button-container,.modal-button-result-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .modal-button-container button {
@@ -365,9 +365,9 @@ input[type=radio]:checked ~ .option{
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
    
 }
 
@@ -386,12 +386,12 @@ input[type=radio]:checked ~ .option{
 }
 
 #timer {
-    font-size: 15px;
+    font-size:0.9375rem;
     color: #ffffff;
     background-color: #333333;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
  
   .modal-user-prompt{
@@ -402,7 +402,7 @@ input[type=radio]:checked ~ .option{
     transform:translate(-50%,-50%);
     width: 90%;
     max-width: 300px;
-    padding:32px 32px;
+    padding:2rem 2rem;
     border-radius: 5px;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);;
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
@@ -411,20 +411,20 @@ input[type=radio]:checked ~ .option{
   }
   .modal-user-prompt h1{
     margin-top:0;
-    font-size: 20px;
+    font-size:1.25rem;
     color: white;
   }
   .modal-user-prompt p{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: white;
   }
   .modal-user-prompt button{
-    padding:20px 20px;
+    padding: 1.25rem  1.25rem;
     border: none;
     border-radius: 5px;
     background-color: #6C3922;
     color:white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
    
   }
@@ -441,8 +441,8 @@ input[type=radio]:checked ~ .option{
     left: 50%;
     transform:translate(-50%,-50%);
     width: 90%;
-     max-width: 350px;
-    padding:20px;
+    max-width: 350px;
+    padding:1.25rem;
     border-radius: 25px;
     border: 2px solid #6C3922;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
@@ -454,21 +454,21 @@ input[type=radio]:checked ~ .option{
   }
   .modal-user-results h1{
     margin-top:0;
-    font-size: 24px;
+    font-size:1.5rem;
     color: white;
   }
   .modal-user-results p{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .modal-user-results button{
-    padding:10px 20px;
+    padding:0.625rem 1.25rem;
     border: none;
     border-radius: 5px;
     background-color: #6C3922;
     color:white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -488,7 +488,7 @@ input[type=radio]:checked ~ .option{
     max-width: 350px;
     width:90%;
     /* Adjust padding */
-    padding:20px 20px;
+    padding:1.2rem 1.2rem;
     border-radius: 25px;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
@@ -497,23 +497,23 @@ input[type=radio]:checked ~ .option{
   }
   .thanks-user-prompt h1 {
     margin-top: 0; 
-    font-size: 24px; 
+    font-size: 1.5rem; 
     color: white; 
-    margin-bottom: 15px; 
+    margin-bottom: 0.9375rem; 
 }
 
   .thanks-user-prompt p{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .thanks-user-prompt button{
-    padding:10px 20px;
+    padding:0.625rem 1.25rem;
     border: none;
     border-radius: 25px;
     background-color: #6C3922;
     color:white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -532,7 +532,7 @@ input[type=radio]:checked ~ .option{
 }
 .quiz-container h1 {
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom:1.25rem; 
 }
 
   @media screen and (max-width:600px){
