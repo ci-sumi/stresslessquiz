@@ -620,11 +620,16 @@ input[type=radio]:checked ~ .option{
 }
   }
   
-  @media screen and (orientation: landscape) {
+  @media screen and (min-width: 667px) and (max-width: 734px) {
+    /* iPhone 6-8, iPhone X, Pixel 2 landscape */
     .quiz-question-container {
-        width:auto;/* Adjust width for landscape */
-        max-width:auto; /* Adjust max-width for landscape */
-        padding: 1.25rem; /* Adjust padding for landscape */
-        font-size: 2rem; /* Adjust font size for landscape */
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    /* iPhone 6-8 Plus landscape */
+    .quiz-question-container {
+        width: 100%;
     }
 }
