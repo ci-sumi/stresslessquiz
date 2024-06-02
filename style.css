@@ -595,8 +595,7 @@ input[type=radio]:checked ~ .option{
             font-size: 12px;
         }
         .quiz-question-container {
-           display: flex;
-           flex-direction: row;
+           height: auto;
         }
         .quiz-options-container span {
             width: 100%;
@@ -667,4 +666,4 @@ input[type=radio]:checked ~ .option{
         }
     }
     
-}
+
