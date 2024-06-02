@@ -615,6 +615,8 @@ input[type=radio]:checked ~ .option{
    .quiz-container {
     padding: 10px; 
     box-sizing: border-box;
+    max-height: 400px;
+    overflow-y: auto;
 }
 .modal-user-results {
     width: 80%;
