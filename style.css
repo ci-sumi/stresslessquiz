@@ -596,6 +596,7 @@ input[type=radio]:checked ~ .option{
         }
         .quiz-question-container {
            height: auto;
+           box-sizing: border-box;
         }
         .quiz-options-container span {
             width: 100%;
