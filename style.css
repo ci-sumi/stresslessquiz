@@ -6,18 +6,22 @@
 
 }
 
+
 .background {
     margin: 0;
     padding: 0;
-    position: relative;
+    position: fixed;
     text-align: center;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    height:100vh;
     background-image: url('./assets/images/hero.jpg');
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .startquiz_btn {
@@ -135,6 +139,7 @@ h3:before {
     color: white;
     padding-right: 0.125rem;
     letter-spacing: -0.5px;
+    box-sizing: border-box;
    
 }
 .rulesbuttons{
@@ -536,6 +541,12 @@ input[type=radio]:checked ~ .option{
 }
 
   @media screen and (max-width:600px){
+
+    .background {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+   
     .header h3{
         padding:10px;
         font-size: 20px;
@@ -609,99 +620,11 @@ input[type=radio]:checked ~ .option{
 }
   }
   
- 
   @media screen and (orientation: landscape) {
-    .header h3 {
-        padding: 10px;
-        font-size: 20px;
-    }
-    .rules {
-        padding: 10px;
-        font-size: 14px;
-        width: 90%; /* Adjusted width for landscape mode */
-        max-width: 420px; /* Added max-width for better responsiveness */
-    }
-    .rulesbuttons button {
-        font-size: 10px;
-    }
     .quiz-question-container {
-        padding: 5px;
-        width: 90%; /* Adjusted width for landscape mode */
-        max-width: 600px; /* Added max-width for better responsiveness */
-        height: auto;
+        width: 80%; /* Adjust width for landscape */
+        max-width: 80%; /* Adjust max-width for landscape */
+        padding: 1.25rem; /* Adjust padding for landscape */
+        font-size: 2rem; /* Adjust font size for landscape */
     }
-    span label:hover {
-        transform: scale(1.12); /* Reverted to a fixed scale value */
-        color: blue;
-    }
-    .quiz-option-container {
-        width: 90%;
-    }
-    .quiz-container {
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    .modal-user-results {
-        width: 90%;
-        padding: 10px;
-    }
-    .modal-user-results h1 {
-        font-size: 20px;
-    }
-    .modal-user-results p {
-        font-size: 16px;
-    }
-    .modal-user-results button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    .thanks-user-prompt {
-        padding: 15px;
-    }
-    .thanks-user-prompt p {
-        font-size: 16px;
-    }
-    .thanks-user-prompt button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    .thanks-user-prompt h1 {
-        font-size: 20px;
-    }
-    .quiz-options-container {
-        width: 90%;
-        padding: 15px;
-    }
-    .modal-user-prompt {
-        width: 90%;
-        padding: 15px;
-    }
-}
-/* Existing CSS rules */
-
-@media screen and (max-width: 734px) and (orientation: landscape) {
-    .background {
-      height: 100vh; /* Adjusted height for landscape */
-    }
-    
-    .startquiz_btn {
-      top: 50%; /* Adjusted position for landscape */
-    }
-    
-    .rules {
-      width: 50%; /* Adjusted width for landscape */
-      max-width: 420px; /* Added max-width for landscape */
-    }
-    
-    .quiz-question-container {
-      width: 50%; /* Adjusted width for landscape */
-      max-width: 600px; /* Added max-width for landscape */
-    }
-  
-    span label:hover {
-      transform: scale(1.12); /* Reverted to a fixed scale value */
-      color: blue;
-    }
-    
-    /* Adjusted other elements as needed */
 }
