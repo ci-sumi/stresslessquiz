@@ -25,7 +25,7 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [Typography](#typography)
      + [Layout](#layout)
      + [Wireframes](#wireframes)
-   * [Features] (#features)
+   * [Features](#features)
      + [Home Page](#home-page)
      + [Rule Box](#rule-box)
      + [Quix Box](#quiz-box)
@@ -38,7 +38,7 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
        +[CSS](#css)
        +[Javascript](#javascript)
      + [ Accessibility](#accessibility)
-     + [Button Testing](#button testing)
+     + [Button Testing](#button-testing)
      + [Comprehensive Game Testing](#comprehensive-game-testing)
      + [Rigorous Browser Testing](#rigorous-browser-testing)
      + [Comprehensive Device Testing](#comprehensive-device-testing)
@@ -79,12 +79,13 @@ As a first-time user, I hope to navigate the quiz effortlessly, understanding it
 
 As a first-time user, I desire a dynamic and enjoyable experience, feeling motivated to complete the quiz and learn from the results.
 
+I want to input my name at the start to personalize the experience and make it more attractive.
+
 ### Returning User  
 As a returning user, I want to easily resume the quiz from where I left off without any hassle.
 
 As a returning user, I want to see new or randomized questions each time to keep the quiz fresh and engaging.
 
-As a returning user, I want to input my name at the start to personalize the experience and make it more attractive.
 
 As a returning user, I want to be motivated by a dynamic and enjoyable quiz experience that encourages me to improve my performance with each attempt.
 

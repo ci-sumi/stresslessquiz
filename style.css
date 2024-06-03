@@ -589,8 +589,8 @@ input[type=radio]:checked~.option {
     text-align: center;
     margin-bottom: 1.25rem;
 }
-/* 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:400px) {
 
     .header h3 {
         padding: 10px;
@@ -681,153 +681,92 @@ input[type=radio]:checked~.option {
         width: 90%;
         padding: 15px;
     }
-} */
-
-/* Landscape mode for small devices (smartphones) */
-@media screen and (max-width: 600px) and (orientation: landscape) {
-    .background {
-        height: 100vw;
-        width: 100vh;
-    }
-
-    .startquiz_btn {
-        top: 50%;src: format(
-            
-        );
+}
+@media screen and (orientation: landscape) and (max-width: 1000px){
+    .header h3 {
+        padding: 10px;
+        font-size: 20px;
     }
 
     .rules {
-        width: 90%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .rulesbuttons button {
+        font-size: 10px;
+    }
+
+    .quiz-question-container {
         padding: 5px;
-    }
-
-    .quiz-question-container {
-        width: 90%;
+        width: 350px;
         height: auto;
-        padding: 10px;
     }
 
-    .quiz-options-container {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .modal-user-prompt, .modal-user-results, .thanks-user-prompt {
-        width: 90%;
-        padding: 10px;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    .startquiz_btn button, .rulesbuttons button, .next-button-container button, .modal-button-container button {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-}
-
-/* Landscape mode for tablets */
-@media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
-    .background {
-        height: 100vw;
-        width: 100vh;
-    } 
-
-    .startquiz_btn {
-        top: 50%;
+    .quiz-options-container span {
+        width: auto;
     }
 
     .rules {
-        width: 80%;
+        width: 420px;
+    }
+
+    span label:hover {
+        transform: scale(var(--scale-factor));
+        color: blue;
+    }
+
+    .quiz-option-container {
+        width: 90%;
+    }
+
+    .quiz-container {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .modal-user-results {
+        width: 90%;
         padding: 10px;
     }
 
-    .quiz-question-container {
-        width: 80%;
-        height: auto;
-        padding: 15px;
+    .modal-user-results h1 {
+        font-size: 20px;
     }
 
-    .quiz-options-container {
-        width: 80%;
-        padding: 15px;
+    .modal-user-results p {
+        font-size: 16px;
     }
 
-    .modal-user-prompt, .modal-user-results, .thanks-user-prompt {
-        width: 80%;
-        padding: 15px;
+    .modal-user-results button {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
-    h3 {
-        font-size: 1.75rem;
-    }
-
-    .startquiz_btn button, .rulesbuttons button, .next-button-container button, .modal-button-container button {
-        padding: 0.75rem 1.25rem;
-        font-size: 1.25rem;
-    }
-}
-/* General adjustments for all landscape orientations */
-@media screen and (orientation: landscape) {
-    h3 {
-        font-size: 1.5rem; /* Reduce font size for landscape */
-    }
-
-    .startquiz_btn button, .rulesbuttons button, .next-button-container button, .modal-button-container button {
-        padding: 0.5rem 1rem; /* Adjust padding */
-        font-size: 1rem; /* Adjust font size */
-    }
-
-    .quiz-question-container h1, h2 {
-        font-size: 1rem; /* Adjust font size for questions */
-    }
-
-    .quiz-options-container li {
-        padding: 0.5rem 1rem; /* Adjust padding for options */
-    }
-}
-
-@media screen and (min-width: 375px) {
-    .background {
-        height: 100vh; /* Adjusted to fit the viewport */
-    }
-
-    .startquiz_btn {
-        top: 40%; /* Adjusted position */
-    }
-
-    .rules {
-        width: 90%; /* Adjusted width */
-        padding: 5px; /* Reduced padding */
-    }
-
-    .quiz-question-container {
-        width: 90%; /* Adjusted width */
-        padding: 5px; /* Adjusted padding */
-    }
-
-    .quiz-options-container {
-        width: 90%; /* Adjusted width */
-        padding: 5px; /* Adjusted padding */
-    }
-
-    .modal-user-prompt,
-    .modal-user-results,
     .thanks-user-prompt {
-        width: 90%; /* Adjusted width */
-        padding: 10px; /* Adjusted padding */
+        padding: 15px;
     }
 
-    h3 {
-        font-size: 1.5rem; /* Adjusted font size */
+    .thanks-user-prompt p {
+        font-size: 16px;
     }
 
-    .startquiz_btn button,
-    .rulesbuttons button,
-    .next-button-container button,
-    .modal-button-container button {
-        padding: 0.5rem 1rem; /* Adjusted padding */
-        font-size: 1rem; /* Adjusted font size */
+    .thanks-user-prompt button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .thanks-user-prompt h1 {
+        font-size: 20px;
+    }
+
+    .quiz-options-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-user-prompt {
+        width: 90%;
+        padding: 15px;
     }
 }
