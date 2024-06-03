@@ -57,13 +57,6 @@ document.getElementById("userName").addEventListener("input",function(event){
     }
 });
 
-// document.getElementById("nextQuestion").addEventListener("click",function(){
-//     var option = document.querySelector(".quiz-options-container")
-//     option.style.display="flex"
-// var nextQuestion = document.getElementById("nextQuestion");
-// nextQuestion.style.display = "none"
-
-// })
 function closeOptionModal() {
     var closeOptionModal = document.querySelector(".quiz-options-container");
     closeOptionModal.style.display = "none";
@@ -231,35 +224,6 @@ document.getElementById("nextQuestion").addEventListener("click", () => {
 }
 
 );
-
-// const radioButtons = document.querySelectorAll('input[name="option"]');
-// radioButtons.forEach(radioButton => {
-//     radioButton.addEventListener("change", checkAnswer);
-// });
-
-// function checkAnswer() {
-//     const selectOption = document.querySelector('input[name="option"]:checked');
-//     console.log(selectOption);
-//     const selectedOptionValue = selectOption.value;
-//     const correctAnswer = shuffleQuestionArray[currentQuestionIndex].answer;
-//     console.log(correctAnswer);
-
-//     // Accessing the parent element of the label associated with the selected option
-//     const parentElement = selectOption.parentElement;
-
-//     // Comparing the selected option value with the correct answer
-//     if (selectedOptionValue === correctAnswer) {
-//         parentElement.style.color = "green";
-//     } else {
-//         parentElement.style.color = "red";
-//     }
-
-//     // Disable all radio buttons after an option is selected
-//     const radioButtons = document.querySelectorAll('input[name="option"]');
-//     radioButtons.forEach(radio => {
-//         radio.disabled = true;
-//     });
-// }
 let correctAnswerCount=0;
 const radioButtons = document.querySelectorAll('input[name="option"]');
 radioButtons.forEach(radioButton => {
@@ -278,15 +242,7 @@ function checkAnswer() {
     const options = currentQuestion.options;
     ansSelected = true;
     stopTimer();
-    // timer = document.getElementById("timer")
-    // timer.style.display="none"
-  
-
-    // Log selected option and current question for debugging
-    // console.log("Selected Option:", selectedOption);
-    // console.log("Current Question:", currentQuestion);
-    
-    
+   
 
     // Check if selected option matches the current answer
     if (options[selectedOptionIndex] === currentAnswer) {
@@ -397,21 +353,10 @@ function ok(){
      options.forEach(option=>{
       option.disabled=false;
      });
-    //  document.getElementById("nextQuestion").click();
+    
      
 }
-//To restart quiz
 
-// function restart(){
-    
-//     var quizbox = document.querySelector(".modal-user-results")
-//     quizbox.style.display = "block";
-//     // var rulesBox = document.querySelector(".rules");
-//     // rulesBox.style.display = "block";
-//     // var quizbox = document.querySelector(".quiz-question-container")
-//     // quizbox.style.display = "none"
-
-// }
 
 function displayResults(){
     var userName = document.getElementById("userName").value;
