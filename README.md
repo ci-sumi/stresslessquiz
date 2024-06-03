@@ -234,6 +234,13 @@ Favicon: Carefully chosen to align with the overall theme.
 
 ![Screenshot Favicon Image](/assets/images/hero.jpg)
 
+-404 Page not found
+ - Created a simple 404.html page to inform users when a page cannot be found
+- Included basic styling for better user experience
+- Added a link to navigate back to the homepage.
+
+![Screenshot of 404 page](docs/readme_images/404.png)
+
 
 
 ### Future Implementation
