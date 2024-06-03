@@ -590,7 +590,8 @@ input[type=radio]:checked~.option {
     margin-bottom: 1.25rem;
 }
 
-@media only screen and (min-width: 667px) and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width:600px) {
+
     .header h3 {
         padding: 10px;
         font-size: 20px;
@@ -607,20 +608,19 @@ input[type=radio]:checked~.option {
 
     .quiz-question-container {
         padding: 5px;
-        width: auto; /* Adjusted to auto */
+        width: 350px;
         height: auto;
-        display: flex; /* Added */
-        flex-direction: row; /* Changed from column to row */
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
+
     }
 
     .quiz-options-container span {
         width: auto;
+
     }
 
     .rules {
         width: 420px;
+
     }
 
     span label:hover {
@@ -629,11 +629,7 @@ input[type=radio]:checked~.option {
     }
 
     .quiz-option-container {
-        width: auto; /* Adjusted to auto */
-        display: flex; /* Added */
-        flex-direction: row; /* Changed from column to row */
-        justify-content: center; /* Center options horizontally */
-        align-items: center; /* Center options vertically */
+        width: 90%;
     }
 
     .quiz-container {
@@ -677,12 +673,96 @@ input[type=radio]:checked~.option {
     }
 
     .quiz-options-container {
-        width: auto; /* Adjusted to auto */
+        width: 90%;
         padding: 15px;
-        display: flex; /* Added */
-        flex-direction: row; /* Changed from column to row */
-        justify-content: center; /* Center options horizontally */
-        align-items: center; /* Center options vertically */
+    }
+
+    .modal-user-prompt {
+        width: 90%;
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .rules {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .rulesbuttons button {
+        font-size: 10px;
+    }
+
+    .quiz-question-container {
+        padding: 5px;
+        width: 350px;
+        height: auto;
+    }
+
+    .quiz-options-container span {
+        width: auto;
+    }
+
+    .rules {
+        width: 420px;
+    }
+
+    span label:hover {
+        transform: scale(var(--scale-factor));
+        color: blue;
+    }
+
+    .quiz-option-container {
+        width: 90%;
+    }
+
+    .quiz-container {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .modal-user-results {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .modal-user-results h1 {
+        font-size: 20px;
+    }
+
+    .modal-user-results p {
+        font-size: 16px;
+    }
+
+    .modal-user-results button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .thanks-user-prompt {
+        padding: 15px;
+    }
+
+    .thanks-user-prompt p {
+        font-size: 16px;
+    }
+
+    .thanks-user-prompt button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .thanks-user-prompt h1 {
+        font-size: 20px;
+    }
+
+    .quiz-options-container {
+        width: 90%;
+        padding: 15px;
     }
 
     .modal-user-prompt {
