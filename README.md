@@ -1,5 +1,8 @@
 # stresslessquiz
 
+This project is a part of a resubmission of the project [ https://ci-sumi.github.io/stress-free-living-quiz/].
+The project has been redeployed with the new changes.
+
 ## Project Overview
 Stressless Quiz is an online quiz designed for individuals looking to understand and manage stress better.
 The quiz offers users the opportunity to explore challenging questions related to the nature of stress, its causes, and effective stress management techniques.
@@ -34,9 +37,9 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [Future Implementation](#future-implementation)
    * [Testing](#testing)
      + [Validator Testing](#validator-testing)
-       +[HTML](#html)
-       +[CSS](#css)
-       +[Javascript](#javascript)
+       + [HTML](#html)
+       + [CSS](#css)
+       + [Javascript](#javascript)
      + [ Accessibility](#accessibility)
      + [Button Testing](#button-testing)
      + [Comprehensive Game Testing](#comprehensive-game-testing)
@@ -348,6 +351,8 @@ Favicon: Carefully chosen to align with the overall theme.
  During a period of personal struggle with depression, I unexpectedly discovered a unique source of inspiration. Despite the challenges I faced, the experience led me to develop a stress-relief concept that I'm excited to share.
 
  ### Media
+ Background Image
+ - [Brain Image](https://www.freepik.com/premium-ai-image/brain-disorder-symbol-presented-by-human-head-made-from-crumpled-paper-torn-blue-copy-space-background_148184265.htm)
 
 
 
