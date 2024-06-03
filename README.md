@@ -42,17 +42,22 @@ Feel free to check out the [GitHub Repository](https://github.com/ci-sumi/stress
      + [Comprehensive Game Testing](#comprehensive-game-testing)
      + [Rigorous Browser Testing](#rigorous-browser-testing)
      + [Comprehensive Device Testing](#comprehensive-device-testing)
+     + [Fixed Bugs](#fixed-bugs)
+     + [Known Bugs](#known-bugs)
 
-     
+   * [Technologies](#technologies)
+     + [Languages](#languages)
+     + [Libraries and Programs Used](#libraries-and-programs-used)
 
+   * [Deploy with GitHub Pages](#deploy-with-github-pages)
+   * [Cloning](#cloning)
+   * [Content](#content)
+     + [Credits](#credits)
+     + [Media](#media)
+     + [Resources Used](#resources-used)
+   * [Acknowledgements](#acknowledgements)
 
-
-
-
-
-
-
-
+   
 ## Site Owner Goals
 
 - **Engaging Quiz Experience** : Provide an interactive quiz with educational content about stress, fostering user engagement and learning.
@@ -278,3 +283,83 @@ Favicon: Carefully chosen to align with the overall theme.
 
 - #### Comprehensive Device Testing
   - Extensive testing across various devices, including Desktops, Laptops, iPhone 8, iPhone 11 Pro Max, and Xiaomi Redmi Note 11, ensured responsiveness across diverse screen sizes in both portrait and landscape orientations. Additionally, compatibility assessments were conducted using Chrome developer tools across a spectrum of devices, affirming structural integrity across differing screen dimensions.
+
+
+  #### Fixed Bugs
+   Encountered an issue where my Git commit was failing with an exit code. Despite multiple attempts, the changes were not getting committed. I contacted tutor support(Code Institute) for assistance, and with their help, the problem was identified and resolved by adding a .gitmodules file. This fixed the issue and allowed the commit to succeed.
+
+
+  #### Known Bugs
+
+## Technologies
+
+### Languages
+  - HTML5, CSS, and JavaScript to develop the project.
+
+### Libraries and Programs Used
+
+ - [Am I Responsive](https://ui.dev/amiresponsive) AMI Responsiveness to test and ensure the project's responsiveness across various devices and screen sizes.
+ - [Responsinator](http://www.responsinator.com/) Responsinator also used to test and ensure the project's responsiveness.
+ - [Balsamiq](https://balsamiq.com/?gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8vKZVsIQw0dHc-KprCi3RzVpWpXJ06V3cqTGdn9smwTI_fyrIsOiysaAqUDEALw_wcB)
+  Used Balsamiq to create wireframes and prototypes, which helped in visualizing the design and structure of the project before development.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) Used Chrome DevTools to debug, test, and optimize the project's performance, ensuring it worked correctly across different devices and screen sizes.
+
+- [Favicon](https://favicon.io/) Added a favicon to the project for better branding and to enhance the user experience.
+
+- [Canva](https://www.canva.com/colors/color-palette-generator/) Used Canva to create color palette.
+
+## Deploy with GitHub Pages
+ 1. Go to Repository Settings: Navigate to your repository on GitHub, click on the "Settings" tab.
+2. Enable GitHub Pages: Scroll down to the "GitHub Pages" section.
+3. Source Branch: Select the branch you want to deploy from (usually main or master), and if necessary, specify the folder (e.g., /docs).
+4. Save: Click "Save" or "Deploy" to publish your site.
+
+[Live link]( https://ci-sumi.github.io/stresslessquiz/)
+
+## Cloning
+- Get Repository URL
+
+  1. Go to GitHub: Open the repository you want to clone in your web browser.
+
+  2. Copy Repository URL: Click on the "Code" button and copy the repository URL (HTTPS or SSH).
+- Open Terminal/Command Prompt
+
+  1. Open Terminal/Command Prompt: Navigate to the directory where you want to clone the repository.
+
+- Clone the Repository
+
+  Run Git Clone Command: Use the git clone command followed by the repository URL:
+
+  https://github.com/ci-sumi/stresslessquiz.git
+
+
+## Credits
+
+  ### Content
+
+ During a period of personal struggle with depression, I unexpectedly discovered a unique source of inspiration. Despite the challenges I faced, the experience led me to develop a stress-relief concept that I'm excited to share.
+
+ ### Media
+
+
+
+### Resources Used
+[W3 Schools](https://www.w3schools.com/)
+
+[Stack Overflow](https://stackoverflow.com/)
+
+[Geeks for Geeks](https://www.geeksforgeeks.org/)
+
+[Youtube chanel](https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=630s)
+
+## Acknowledgements
+
+I would like to express my sincere gratitude to Antonio Rodriguez & Code Institue Tutor help
+
+Special thanks to Rohini A R and Tomislav Dukez for their unwavering encouragement and assistance during various stages of this journey. Their dedication and collaboration have significantly enriched the project.
+
+
+
+
+  
+
