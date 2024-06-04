@@ -682,7 +682,7 @@ input[type=radio]:checked~.option {
         padding: 15px;
     }
 }
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 412px){
     .header h3 {
         padding: 10px;
         font-size: 20px;
@@ -778,7 +778,7 @@ input[type=radio]:checked~.option {
 
 @media only screen and (orientation: landscape) {
     .rules{
-    height: 275px;
+    height: 250px;
     overflow-y: scroll;
     }
     .rulesbuttons {
@@ -796,5 +796,10 @@ input[type=radio]:checked~.option {
     .modal-user-results{
         height: 250px;
         overflow-y: scroll;
+    }
+}
+@media only screen and (max-width: 375px){
+    .quiz-question-container{
+        height: 150px;
     }
 }
