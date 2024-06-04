@@ -149,7 +149,7 @@ const optionFourLabel = document.getElementById("option-four-label");
 // "Add functionality to dynamically display question number during quiz progression"
 function displayQuestionNumber(){
     const questionNumberDisplay = document.getElementById("question-number");
-    questionNumberDisplay.textContent = `${currentQuestionIndex+1} of ${totalQuestions}`;
+    questionNumberDisplay.textContent = `${currentQuestionIndex + 1} of ${totalQuestions}`;
 }
 
 
