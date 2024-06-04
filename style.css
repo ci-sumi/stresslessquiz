@@ -798,12 +798,16 @@ input[type=radio]:checked~.option {
         overflow-y: scroll;
     }
 }
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 414px){
     .quiz-question-container{
         height: 300px;
         overflow-y: scroll;
     }
     span label{
-        height: 20px;
+        height: 40px;
+    }
+    modal-user-results{
+        height: 250px;
+        overflow-y: scroll;
     }
 }
