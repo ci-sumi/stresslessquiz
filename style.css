@@ -682,7 +682,7 @@ input[type=radio]:checked~.option {
         padding: 15px;
     }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px){
     .header h3 {
         padding: 10px;
         font-size: 20px;
@@ -698,7 +698,7 @@ input[type=radio]:checked~.option {
     }
 
     .quiz-question-container {
-        padding: 5px;
+        padding: 2px;
         width: 350px;
         height: auto;
     }
@@ -708,7 +708,12 @@ input[type=radio]:checked~.option {
     }
 
     .rules {
-        width: 420px;
+        width: 400px;
+    }
+    .rule{
+        height:17px;
+        font-size:0.75rem;
+        
     }
 
     span label:hover {
@@ -768,5 +773,28 @@ input[type=radio]:checked~.option {
     .modal-user-prompt {
         width: 90%;
         padding: 15px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .rules{
+    height: 275px;
+    overflow-y: scroll;
+    }
+    .rulesbuttons {
+        bottom: auto;
+
+    }
+    .quiz-question-container{
+        height: 250px;
+        overflow-y: scroll;
+
+    }
+    span label{
+        height: 40px;
+    }
+    .modal-user-results{
+        height: 250px;
+        overflow-y: scroll;
     }
 }
