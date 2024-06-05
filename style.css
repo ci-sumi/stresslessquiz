@@ -619,8 +619,11 @@ input[type=radio]:checked~.option {
     }
 
     .rules {
-        width: 420px;
+        width: 375px;
 
+    }
+    span label{
+        font-size: 10px;
     }
 
     span label:hover {
