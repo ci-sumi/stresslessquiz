@@ -111,6 +111,8 @@ The color scheme was generated using an uploaded brain image in Casava.[Canva](h
 
 ### Typography
 
+Instaed of Google Fonts, used standard web-safe fonts like Arial and sans-serif
+
 ### Layout
 - Start Area
 
@@ -294,13 +296,19 @@ Favicon: Carefully chosen to align with the overall theme.
 
 - #### Comprehensive Device Testing
   - Extensive testing across various devices, including Desktops, Laptops, iPhone 8, iPhone 11 Pro Max, and Xiaomi Redmi Note 11, ensured responsiveness across diverse screen sizes in both portrait and landscape orientations. Additionally, compatibility assessments were conducted using Chrome developer tools across a spectrum of devices, affirming structural integrity across differing screen dimensions.
-
+   [Responsinator](http://www.responsinator.com/?url=ci-sumi.github.io%2Fstresslessquiz%2F)
 
   #### Fixed Bugs
    Encountered an issue where my Git commit was failing with an exit code. Despite multiple attempts, the changes were not getting committed. I contacted tutor support(Code Institute) for assistance, and with their help, the problem was identified and resolved by adding a .gitmodules file. This fixed the issue and allowed the commit to succeed.
 
 
   #### Known Bugs
+  Coloring Correct and Incorrect Answers
+
+There is a known issue with the quiz application where the intended functionality to color the correct and incorrect answers is not working as expected. Specifically:
+
+- Correct answers are not being highlighted with the intended color.
+- Incorrect answers remain uncolored or are colored incorrectly.
 
 ## Technologies
 
