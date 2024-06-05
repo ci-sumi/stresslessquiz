@@ -644,7 +644,7 @@ input[type=radio]:checked~.option {
     }
 
     .modal-user-results {
-        width: 90%;
+        width: 70%;
         padding: 8px;
     }
 
@@ -663,6 +663,7 @@ input[type=radio]:checked~.option {
 
     .thanks-user-prompt {
         padding: 10px;
+        width: 70%;
     }
 
     .thanks-user-prompt p {
@@ -679,12 +680,12 @@ input[type=radio]:checked~.option {
     }
 
     .quiz-options-container {
-        width: 80%;
+        width: 70%;
         padding: 15px;
     }
 
     .modal-user-prompt {
-        width: 90%;
+        width: 70%;
         padding: 10px;
     }
 }
