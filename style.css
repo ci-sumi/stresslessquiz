@@ -622,8 +622,11 @@ input[type=radio]:checked~.option {
         width: 375px;
 
     }
-    span label,h1{
-        font-size: 13px;
+    span label,h1,h2{
+        font-size: 14px;
+    }
+    #display-question{
+        font-size: 15px;
     }
 
     span label:hover {
