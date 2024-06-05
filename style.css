@@ -590,7 +590,7 @@ input[type=radio]:checked~.option {
     margin-bottom: 1.25rem;
 }
 /* media query for responsiveness */
-@media screen and (max-width:600px) {
+@media screen and (max-width:415px) and (orientation: portrait){
 
     .header h3 {
         padding: 10px;
@@ -682,101 +682,8 @@ input[type=radio]:checked~.option {
         padding: 15px;
     }
 }
-@media only screen and (max-width: 412px){
-    .header h3 {
-        padding: 10px;
-        font-size: 20px;
-    }
 
-    .rules {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .rulesbuttons button {
-        font-size: 10px;
-    }
-
-    .quiz-question-container {
-        padding: 2px;
-        width: 350px;
-        height: auto;
-    }
-
-    .quiz-options-container span {
-        width: auto;
-    }
-
-    .rules {
-        width: 400px;
-    }
-    .rule{
-        height:17px;
-        font-size:0.75rem;
-        
-    }
-
-    span label:hover {
-        transform: scale(var(--scale-factor));
-        color: blue;
-    }
-
-    .quiz-option-container {
-        width: 90%;
-    }
-
-    .quiz-container {
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .modal-user-results {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .modal-user-results h1 {
-        font-size: 20px;
-    }
-
-    .modal-user-results p {
-        font-size: 16px;
-    }
-
-    .modal-user-results button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    .thanks-user-prompt {
-        padding: 15px;
-    }
-
-    .thanks-user-prompt p {
-        font-size: 16px;
-    }
-
-    .thanks-user-prompt button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    .thanks-user-prompt h1 {
-        font-size: 20px;
-    }
-
-    .quiz-options-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .modal-user-prompt {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width:1000px)and (orientation: landscape) {
     .rules{
     height: 200px;
     overflow-y: scroll;
@@ -798,16 +705,20 @@ input[type=radio]:checked~.option {
         overflow-y: scroll;
     }
 }
-@media only screen and (max-width: 414px){
+/* @media only screen and (max-width: 414px){
     .quiz-question-container{
         height: 300px;
-        overflow-y: scroll;
+        
     }
     span label{
         height: 40px;
     }
     modal-user-results{
-        height: 250px;
+        height: 200px;
         overflow-y: scroll;
     }
-}
+} */
+/* 
+@media only screen and (min-width: 360px) and (max-width: 4px){
+
+} */
