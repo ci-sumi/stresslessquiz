@@ -441,7 +441,6 @@ input[type=radio]:checked~.option {
     padding: 2rem 2rem;
     border-radius: 5px;
     background: linear-gradient(to right, #90BED4, #1A5D84, #6C3922, #A6704E);
-    ;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
     text-align: center;
     z-index: 1;
@@ -692,6 +691,9 @@ input[type=radio]:checked~.option {
     .modal-user-prompt {
         width: 70%;
         padding: 10px;
+    }
+    .next-button-container button{
+        padding: 5px;
     }
 }
 
