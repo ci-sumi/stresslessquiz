@@ -198,10 +198,10 @@ label {
     border-color: #6C3922;
 }
 /* Styles for the quiz question container, including background animation, question text, and option labels */
-.quiz-question-container {
+/* .quiz-question-container {
     display: none;
 
-}
+} */
 
 .quiz-question-container {
     /* /* background-image: url('/assets/images/optimisam.jpg'); */
@@ -215,7 +215,7 @@ label {
     background-size: cover;
     z-index: 1;
     background-position: center;
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -233,6 +233,8 @@ label {
     font-size: 3.125rem;
     display: none;
     overflow: hidden;
+    background-attachment:fixed ;
+    min-height: 70vh;
 }
 
 .quiz-question-container h1,
