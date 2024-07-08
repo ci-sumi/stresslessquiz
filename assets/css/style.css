@@ -494,7 +494,7 @@ input[type=radio]:checked~.option {
     color: white;
     z-index: 1000;
     animation: fadeIn 0.5s ease-in-out;
-    ;
+    
 }
 
 .modal-user-results h1 {
@@ -610,8 +610,9 @@ input[type=radio]:checked~.option {
 
     .quiz-question-container {
         padding: 5px;
-        width: 300px;
-        height: auto;
+        width: 95%;
+        /* max-width: none; */
+        /* height: auto; */
 
     }
 
@@ -702,8 +703,10 @@ input[type=radio]:checked~.option {
 
     }
     .quiz-question-container{
-        height: 250px;
-        overflow-y: scroll;
+        width:90%;
+        max-width:none;
+        /* height: 250px;
+        overflow-y: scroll; */
 
     }
     span label{
