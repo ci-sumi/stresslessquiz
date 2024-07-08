@@ -714,20 +714,3 @@ input[type=radio]:checked~.option {
         overflow-y: scroll;
     }
 }
-/* @media only screen and (max-width: 414px){
-    .quiz-question-container{
-        height: 300px;
-        
-    }
-    span label{
-        height: 40px;
-    }
-    modal-user-results{
-        height: 200px;
-        overflow-y: scroll;
-    }
-} */
-/* 
-@media only screen and (min-width: 360px) and (max-width: 4px){
-
-} */
