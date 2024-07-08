@@ -611,7 +611,7 @@ input[type=radio]:checked~.option {
     .quiz-question-container {
         padding: 5px;
         width: 95%;
-        max-height: 60vh;
+        max-height: 50vh;
         /* max-width: none; */
         /* height: auto; */
 
