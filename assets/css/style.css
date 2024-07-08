@@ -595,7 +595,10 @@ input[type=radio]:checked~.option {
         padding: 10px;
         font-size: 20px;
     }
-
+    .background{
+        min-width: 100vw;
+        min-height: 100vh;
+    }
     .rules {
         padding: 10px;
         font-size: 14px;
