@@ -237,7 +237,7 @@ The website features a responsive design and includes:
 
 Favicon: Carefully chosen to align with the overall theme.
 
-![Screenshot Favicon Image](/assets/images/hero.jpg)
+![Screenshot Favicon Image](/assets/images/hero/hero.jpg)
 
 -404 Page not found
  - Created a simple 404.html page to inform users when a page cannot be found
