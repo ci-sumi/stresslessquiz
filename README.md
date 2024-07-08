@@ -170,13 +170,13 @@ Instaed of Google Fonts, used standard web-safe fonts like Arial and sans-serif
 
  Wireframes are created using [Balsamiq](https://balsamiq.com/)
 
- ![Wireframe Start Page](docs/readme_images/start.png)
- ![Wireframe Rule Page](docs/readme_images/rules.png)
- ![Wireframe Quiz Page](docs/readme_images/quizbox.png)
- ![Wireframe Timeout](docs/readme_images/timeout.png)
- ![Wireframe Warning Prompt](docs/readme_images/warningprompt.png)
- ![Wireframe Result Box](docs/readme_images/resultbox.png)
- ![Wireframe Thanks](docs/readme_images/restartquiz.png)
+ ![Wireframe Start Page](docs/wire_frames/wf_start.png)
+ ![Wireframe Rule Page](docs/wire_frames/wf_rules.png)
+ ![Wireframe Quiz Page](docs/wire_frames/wf_quizbox.png)
+ ![Wireframe Timeout](docs/wire_frames/wf_timeout.png)
+ ![Wireframe Warning Prompt](docs/wire_frames/wf_warningprompt.png)
+ ![Wireframe Result Box](docs/wire_frames/wf_resultbox.png)
+ ![Wireframe Thanks](docs/wire_frames/wf_restartquiz.png)
 
  </details>
 
@@ -381,7 +381,4 @@ Special thanks to Rohini A R and Tomislav Dukez for their unwavering encourageme
 
 
 
-
-  
-
-#test
+# testing GitHub link in VS Code
