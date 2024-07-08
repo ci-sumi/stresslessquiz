@@ -21,7 +21,7 @@
     flex-direction: column;
     min-width: 100%;
     background-attachment: fixed;
-    background-size: 100% 100%;
+
 }
 /* Center the start quiz button and style it with bold text, padding, and hover effect */
 .startquiz_btn {
