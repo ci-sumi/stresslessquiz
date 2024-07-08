@@ -609,9 +609,10 @@ input[type=radio]:checked~.option {
     }
 
     .quiz-question-container {
-        padding: 4px;
         width: 85%;
         max-height: 60vh;
+        padding: 1rem; /* Adjust padding for smaller screens */
+        font-size: 1rem;
         /* max-width: none; */
         /* height: auto; */
 
