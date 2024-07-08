@@ -305,7 +305,6 @@ input[type=radio]:checked~.option {
     border-radius: 20px;
     background-color: #1A5D84;
     color: #FFFFFF;
-    ;
     border: none;
     cursor: pointer;
 }
@@ -607,6 +606,7 @@ input[type=radio]:checked~.option {
     .rulesbuttons button {
         font-size: 10px;
     }
+    
 
     .quiz-question-container {
         width: 85%;
@@ -729,6 +729,11 @@ input[type=radio]:checked~.option {
         height: 250px;
         overflow-y: scroll;
     }
+    
+    .modal-user-prompt {
+        width: 60%;
+        padding: 10px;
+    }
 }
 @media only screen and (max-width: 736px) and (orientation: landscape) {
     .quiz-options-container {
@@ -744,20 +749,3 @@ input[type=radio]:checked~.option {
         overflow-y: auto;
     }
 }
-
-/* Media query for portrait mode */
-/* @media only screen and (max-width: 1000px) and (orientation: portrait) {
-    .quiz-options-container {
-        width: 80%;
-        max-width: 300px;
-        max-height: 60vh;
-        padding: 1.5rem;
-    }
-
-    .quiz-question-container {
-        width: 95%;
-        max-width: 500px;
-        max-height: 70vh;
-        overflow-y: auto;
-    }
-} */
