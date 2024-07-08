@@ -694,6 +694,7 @@ input[type=radio]:checked~.option {
     }
     .next-button-container button{
         padding: 5px;
+        top: -20px;
     }
 }
 
