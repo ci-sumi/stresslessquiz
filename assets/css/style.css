@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     min-width: 100%;
-    background-attachment: fixed;
+    background-size: fixed;
 
 }
 /* Center the start quiz button and style it with bold text, padding, and hover effect */
@@ -109,13 +109,13 @@ h3:before {
 /* Styles for a hidden rules container positioned at the center of the viewport, with a double border, transition effects, and buttons for interaction */
 .rules {
     display:none;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     border: 2px double #6C3922;
     z-index: 2;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 40%;
     background: #1A5D84;
     border-radius: 15%;
     transform: translate(-50%, -50%) scale(0.9);
@@ -215,8 +215,8 @@ label {
     background-size: cover;
     z-index: 1;
     background-position: center;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,7 +225,7 @@ label {
     border-radius: 25px;
     padding: 1.875rem;
     margin: 0.625rem auto;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -255,7 +255,6 @@ span label {
     transition: transform 0.3s;
     font-weight: 600;
     color: #FFFFFF;
-    ;
     border: 2px solid #6C3922;
     border-radius: 10px;
     background-color: #1A5D84;
