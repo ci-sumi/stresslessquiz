@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: column;
     min-width: 100%;
-    background-size: fixed;
 
 }
 /* Center the start quiz button and style it with bold text, padding, and hover effect */
@@ -349,7 +348,7 @@ input[type=radio]:checked~.option {
     font-size: 1.5rem;
     font-weight: bold;
     display: none;
-    background-size:fixed
+
 
 }
 
