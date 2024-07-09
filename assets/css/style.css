@@ -114,8 +114,8 @@ h3:before {
     left: 50%;
     border: 2px double #6C3922;
     z-index: 2;
-    width: 100%;
-    max-width: 80%;
+    width: 80%;
+    max-width: 600px;
     background: #1A5D84;
     border-radius: 15%;
     transform: translate(-50%, -50%) scale(0.9);
@@ -215,8 +215,8 @@ label {
     background-size: cover;
     z-index: 1;
     background-position: center;
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
