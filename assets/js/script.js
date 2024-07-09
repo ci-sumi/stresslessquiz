@@ -67,9 +67,6 @@ function closeOptionModal() {
     console.log("timer is stopped");
     
     
-    // startTimer();
-    // var nextQuestion = document.getElementById("nextQuestion");
-    // nextQuestion.style.display = "block"
 }
 
 //Define Array of quiz questions
@@ -183,10 +180,6 @@ function enableRadioButtons() {
     });
 
 }
-// const optionAll = document.querySelectorAll('.option');
-// optionAll.forEach(option => {
-//     option.style.backgroundColor = "";
-// });
 
 
 
@@ -248,12 +241,11 @@ function checkAnswer() {
     if (options[selectedOptionIndex] === currentAnswer) {
         correctAnswerCount++;
        
-        // console.log("Correct Answer");
-        // Apply green color to the selected option
+        
         labelElement.classList.add("correct");
         
     } else {
-        // console.log("Wrong Answer");
+       
         // Apply red color to the selected option
         labelElement.classList.add("wrong");
        
@@ -309,17 +301,17 @@ function startTimer(){
 
 }
 function stopTimer(){
-    // console.log("timer is stopping")
+    
     clearInterval(timeInterval);
-    // console.log("timer is stopped");
+    
       timeStarted=false;
 }
 function promptUserOption(){
     if(showUserprompt){
-        // console.log(showUserprompt)
+        
     
     stopTimer();    
-    // console.log("timer is stopped")
+    
      var prompt = document.querySelector(".modal-user-prompt");
      prompt.style.display="block";
      var nextQuestion = document.querySelector(".next-button-container");
@@ -335,10 +327,8 @@ function promptUserOption(){
 
 function renderFirstQuestion(){
     renderQuestion();
-    // if(!timeStarted){
-    //     startTimer();
        timeStarted=true;
-    // }
+    
 }
 
 renderFirstQuestion();
