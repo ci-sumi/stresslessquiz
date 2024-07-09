@@ -6,6 +6,7 @@
 
 
 }
+
 /* Create a fixed, full-screen background image that covers the entire viewport */
 .background {
     margin: 0;
@@ -123,6 +124,7 @@ h3:before {
     transition: all 0.3s ease;
     box-shadow: 10px 25px 20px #6C3922;
     padding: 1rem;
+    height: auto;
 
 
 }
@@ -233,6 +235,7 @@ label {
     font-size: 3.125rem;
     display: none;
     overflow: hidden;
+    height: auto;
 }
 
 .quiz-question-container h1,
